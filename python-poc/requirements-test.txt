@@ -1,0 +1,36 @@
+# Testing Framework Dependencies
+# Core testing framework
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+pytest-xdist>=3.3.0  # Parallel test execution
+
+# HTTP and API testing
+httpx>=0.24.0
+respx>=0.20.0  # Mock HTTP requests
+
+# Test data generation
+faker>=19.0.0
+factory-boy>=3.3.0
+
+# Panel-specific testing utilities
+panel>=1.2.0
+bokeh>=3.2.0  # Panel dependency for testing
+
+# Performance and load testing
+pytest-benchmark>=4.0.0
+locust>=2.16.0  # Load testing (optional)
+
+# Code quality and linting for tests
+pytest-flake8>=1.1.0
+pytest-mypy>=0.10.0
+
+# Test reporting and documentation
+pytest-html>=3.2.0
+allure-pytest>=2.13.0  # Advanced reporting (optional)
+
+# Development and debugging
+pytest-sugar>=0.9.7  # Better test output
+pytest-clarity>=1.0.1  # Better assertion messages
+pytest-picked>=0.4.6  # Run tests based on git changes
