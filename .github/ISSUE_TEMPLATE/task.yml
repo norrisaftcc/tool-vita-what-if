@@ -1,0 +1,167 @@
+name: Task
+description: Create a task for development work, maintenance, or project activities
+title: "[TASK] "
+labels: ["task", "needs-review"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to create trackable development tasks, maintenance work, or project activities.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm before creating this task.
+      options:
+        - label: I have checked that this work is not already tracked in an existing issue
+          required: true
+        - label: This task is properly scoped and can be completed independently
+          required: true
+        - label: I have identified any dependencies or blockers
+          required: true
+
+  - type: dropdown
+    id: task-type
+    attributes:
+      label: Task Type
+      description: What type of task is this?
+      options:
+        - Development - New Feature Implementation
+        - Development - Bug Fix
+        - Development - Refactoring
+        - Development - Performance Optimization
+        - Maintenance - Dependency Updates
+        - Maintenance - Technical Debt
+        - Maintenance - Code Cleanup
+        - Documentation - API Documentation
+        - Documentation - User Guides
+        - Documentation - Technical Specs
+        - Testing - Unit Tests
+        - Testing - Integration Tests
+        - Testing - E2E Tests
+        - DevOps - CI/CD Configuration
+        - DevOps - Infrastructure
+        - Research - Technical Investigation
+        - Research - Proof of Concept
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How critical is this task to project progress?
+      options:
+        - P3 - Low (can be delayed if needed)
+        - P2 - Medium (normal priority work)
+        - P1 - High (important for milestone)
+        - P0 - Critical (blocking other work)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      description: Provide a clear, detailed description of what needs to be accomplished
+      placeholder: |
+        This task involves...
+        The work includes...
+        When complete, the system will...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define the specific conditions that must be met for this task to be considered done
+      placeholder: |
+        - [ ] Implement X functionality according to specification
+        - [ ] Add appropriate error handling
+        - [ ] Write unit tests with >90% coverage
+        - [ ] Update documentation
+        - [ ] Verify no breaking changes to existing APIs
+        - [ ] Performance meets requirements (if applicable)
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical-details
+    attributes:
+      label: Technical Implementation Details
+      description: Provide technical guidance, approaches, or constraints for implementing this task
+      placeholder: |
+        Approach: ...
+        Files to modify: ...
+        APIs to create/update: ...
+        Technical constraints: ...
+
+  - type: input
+    id: epic-link
+    attributes:
+      label: Related Epic/Parent Issue
+      description: Link to the epic or parent issue this task belongs to (use #issue-number format)
+      placeholder: "#123"
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies & Blockers
+      description: List any tasks, issues, or external dependencies that must be completed first
+      placeholder: |
+        Depends on:
+        - Issue #123: Database schema changes
+        - External: API documentation from vendor
+        
+        Blocks:
+        - Issue #456: Frontend integration
+
+  - type: dropdown
+    id: effort-estimate
+    attributes:
+      label: Effort Estimate
+      description: Estimated time to complete this task
+      options:
+        - XS (1-4 hours)
+        - S (4-8 hours)
+        - M (1-2 days)
+        - L (3-5 days)
+        - XL (1+ weeks)
+    validations:
+      required: true
+
+  - type: input
+    id: assignee-suggestion
+    attributes:
+      label: Suggested Assignee
+      description: Who should work on this task? (GitHub username)
+      placeholder: "@username"
+
+  - type: textarea
+    id: testing-notes
+    attributes:
+      label: Testing Requirements
+      description: Specific testing requirements or scenarios for this task
+      placeholder: |
+        Unit tests needed for: ...
+        Integration tests should cover: ...
+        Manual testing scenarios: ...
+
+  - type: textarea
+    id: documentation-updates
+    attributes:
+      label: Documentation Updates Required
+      description: What documentation needs to be updated or created?
+      placeholder: |
+        - Update API documentation for new endpoints
+        - Add usage examples to README
+        - Update architectural diagrams
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Any other relevant information, context, or considerations
