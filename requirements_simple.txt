@@ -1,0 +1,7 @@
+# VITA Simple - Minimal Dependencies
+# From 30+ dependencies to just 4 essential packages
+
+streamlit==1.31.0      # UI framework
+openai==1.12.0         # AI/LLM integration
+python-dotenv==1.0.0   # Environment configuration
+pygments==2.17.0       # Code syntax highlighting (optional)
