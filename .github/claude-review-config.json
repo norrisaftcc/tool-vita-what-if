@@ -1,0 +1,127 @@
+{
+  "version": "1.0.0",
+  "description": "Claude Code Review Configuration - Defines standards and procedures for automated Claude-assisted code reviews",
+  "enabled": true,
+  "review_triggers": {
+    "file_patterns": [
+      "**/*.ts",
+      "**/*.tsx", 
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.py",
+      "**/*.md",
+      "**/*.yml",
+      "**/*.yaml",
+      "**/*.json"
+    ],
+    "excluded_patterns": [
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      "coverage/**",
+      "*.lock",
+      "package-lock.json"
+    ],
+    "min_lines_changed": 5
+  },
+  "review_criteria": {
+    "code_quality": {
+      "weight": 30,
+      "checks": [
+        "Code follows established patterns and conventions",
+        "Proper error handling implementation",
+        "Clear and meaningful variable/function names",
+        "Appropriate code organization and structure",
+        "DRY principle adherence"
+      ]
+    },
+    "security": {
+      "weight": 25,
+      "checks": [
+        "No hardcoded secrets or credentials",
+        "Proper input validation and sanitization",
+        "Secure dependency usage",
+        "Authentication and authorization patterns",
+        "SQL injection and XSS prevention"
+      ]
+    },
+    "performance": {
+      "weight": 20,
+      "checks": [
+        "Efficient algorithms and data structures",
+        "Proper resource management",
+        "Minimal unnecessary re-renders (React)",
+        "Database query optimization",
+        "Bundle size impact assessment"
+      ]
+    },
+    "maintainability": {
+      "weight": 15,
+      "checks": [
+        "Clear documentation and comments",
+        "Testable code structure",
+        "Backward compatibility considerations",
+        "Breaking change identification",
+        "Dependencies are necessary and up-to-date"
+      ]
+    },
+    "testing": {
+      "weight": 10,
+      "checks": [
+        "Adequate test coverage for new functionality",
+        "Tests are meaningful and not brittle",
+        "Edge cases are covered",
+        "Integration tests where appropriate",
+        "Performance tests for critical paths"
+      ]
+    }
+  },
+  "review_standards": {
+    "approval_threshold": 80,
+    "blocking_threshold": 60,
+    "comment_threshold": 70,
+    "require_human_review": [
+      "security vulnerabilities",
+      "breaking changes",
+      "database migrations",
+      "API changes",
+      "authentication changes"
+    ]
+  },
+  "output_format": {
+    "status_indicators": {
+      "approved": "✅ APPROVED",
+      "changes_requested": "🔴 CHANGES REQUESTED", 
+      "commented": "💬 COMMENTS",
+      "blocked": "❌ BLOCKED"
+    },
+    "severity_levels": {
+      "critical": "🚨",
+      "major": "⚠️",
+      "minor": "ℹ️",
+      "suggestion": "💡"
+    }
+  },
+  "integration": {
+    "github": {
+      "auto_label": true,
+      "auto_request_reviewers": true,
+      "create_review_comment": true,
+      "update_pr_status": true
+    },
+    "required_reviewers": [
+      "norrisaftcc"
+    ],
+    "team_reviewers": []
+  },
+  "compliance": {
+    "require_2fa": true,
+    "audit_trail": true,
+    "review_retention_days": 90,
+    "required_permissions": [
+      "contents:read",
+      "pull-requests:write",
+      "issues:write"
+    ]
+  }
+}
