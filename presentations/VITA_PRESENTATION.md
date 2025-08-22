@@ -22,8 +22,9 @@ style: |
   }
 ---
 
-# VITA Presentation: Breaking Up The Monolith
+# The Last Mile: When Students Meet Industry Reality
 **Total Time: 20 minutes + 5 minutes Q&A**
+*"There's a $15,000 gap between what we teach and what they need"*
 
 ---
 
@@ -35,108 +36,133 @@ style: |
 
 ## Slide 1: Title Slide
 
-# Breaking Up The Monolith
-## Training Tomorrow's AI Orchestrators, Not Yesterday's Tool Users
+# The Last Mile
+## When Students Meet Industry Reality
 
 **VITA Project**  
 *Virtual Intelligence Teaching Assistant*
 
----
-
-## Slide 2: The Reality Check
-
-### Industry Has Already Moved:
-- **51%** of companies use multiple AI agents in production
-- **$140K+** salaries for multi-agent specialists  
-- **78%** of employers need orchestration skills NOW
-
-### Education Is Still Here:
-- Teaching single-tool usage
-- "Just use ChatGPT for everything"
-- No discrimination or selection skills
-
-**Speaker Notes:** The gap between industry needs and educational preparation is widening daily.
+*"There's a $15,000 gap between what we teach and what industry pays for. Tonight, we close it."*
 
 ---
 
-## Slide 3: The Monolith Problem
+## Slide 2: The $15,000 Problem
 
-```
-                              ╔══════════════════╗
-                              ║                  ║
-                              ║   THE MONOLITH   ║
-                              ║    (One AI for   ║
-                              ║    Everything)   ║
-                              ║                  ║
-                              ╚════════╤═════════╝
-                                       │
-                ┌──────────────────────┼──────────────────────┐
-                │                      │                      │
-                ▼                      ▼                      ▼
-         "Help me debug"        "Plan a party"         "Write my essay"
-              👨‍🎓                    👩‍🎓                    🧑‍🎓
-           Student A             Student B             Student C
-        
-        ❌ No skill differentiation
-        ❌ No tool specialization  
-        ❌ Black box dependency
-        ❌ Faculty can't verify learning
-```
+### While Industry Sprints Ahead:
+> **51%** of companies orchestrate multiple AI agents  
+> **$140K+** starting salaries for graduates who can too  
+> **78%** of hiring managers: "We need this skill yesterday"
 
-### Universal Fears:
-- **Students:** "Will AI replace me?"
-- **Faculty:** "Are they learning or copying?"
-- **Employers:** "They can't choose appropriate tools"
+### Higher Ed Teaches This:
+> "Here's ChatGPT. Good luck."
+
+**The result?** Graduates who know *one* hammer in a world that demands *master craftspeople*.
+
+<!-- Speaker Notes: "Every day we wait, the gap gets wider. Every semester we delay, another cohort graduates unprepared." -->
 
 ---
 
-## Slide 4: The Multi-Agent Solution
+## Slide 3: The Monolith Trap
 
 ```
-     ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐
-     │    VITA     │  │   GitHub    │  │   Research  │  │   General   │
-     │  Debugging  │  │   Copilot   │  │    Agent    │  │     LLM     │
-     │   Partner   │  │   Coding    │  │  Academic   │  │   Social    │
-     └──────┬──────┘  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘
-            │                 │                 │                 │
-            │                 │                 │                 │
-     ┌──────▼─────────────────▼─────────────────▼─────────────────▼──────┐
-     │                                                                    │
-     │                    🎓 STUDENT AS AI ORCHESTRATOR                   │
-     │                                                                    │
-     │    "I need to debug" ──────► VITA                                │
-     │    "I need to implement" ───► Copilot                            │
-     │    "I need to research" ────► Research Agent                     │
-     │    "I need to plan" ────────► General LLM                        │
-     │                                                                    │
-     └────────────────────────────────────────────────────────────────────┘
-     
-     ✅ Develops discrimination skills
-     ✅ Matches industry practice (51% companies use multiple agents)
-     ✅ Transparent, specialized tools
-     ✅ Faculty can verify domain-specific learning
+    ══════════════════════════════════════════════════════════════════════
+    ║                                                                 ║
+    ║        🌊 THE MONOLITH: One AI to Rule Them All 🌊              ║
+    ║                                                                 ║
+    ║           "I am ChatGPT. I know everything."                    ║
+    ║                                                                 ║
+    ╚══════════════════════════════╤═══════════════════════════════════╝
+                            │
+                            │ ALL PROBLEMS FLOW HERE
+                            │
+        ┌───────────────────┼───────────────────┬───────────────────┐
+        │                   │                   │                   │
+        ▼                   ▼                   ▼                   ▼
+   "Debug this"      "Plan a party"      "Write my essay"    "Solve climate"
+        👨‍🎓                👩‍🎓                 🧑‍🎓              🧑‍🎓
+    Same Tool          Same Tool          Same Tool          Same Tool
+    Same Process       Same Process       Same Process       Same Process
+    
+    💀 DEATH BY A THOUSAND PROMPTS 💀
+    
+    ❌ Students become prompt engineers, not problem solvers
+    ❌ Faculty can't tell learning from sophisticated copying
+    ❌ Graduates interview with "I'm really good at ChatGPT"
+    ❌ Employers think: "So is my nephew. Next candidate."
+```
+
+### The Fear Factory:
+> **Students:** "Will AI replace me?"  
+> **Faculty:** "Are they learning or just copying?"  
+> **Employers:** "They know *an* AI tool, not *the right* AI tool"
+
+*Everyone knows something's broken. Nobody knows what comes next.*
+
+---
+
+## Slide 4: The Orchestra Solution
+
+```
+    ╔══════════════╗  ╔══════════════╗  ╔══════════════╗  ╔══════════════╗
+    ║   🔧 VITA    ║  ║  🚀 GitHub   ║  ║  📚 Research ║  ║  💬 General  ║
+    ║   Debugging  ║  ║   Copilot    ║  ║    Agent     ║  ║     LLM      ║
+    ║   Specialist ║  ║   Code Gen   ║  ║   Knowledge  ║  ║   Social     ║
+    ║              ║  ║   Expert     ║  ║   Curator    ║  ║   Companion  ║
+    ╚══════┬═══════╝  ╚══════┬═══════╝  ╚══════┬═══════╝  ╚══════┬═══════╝
+           │                 │                 │                 │
+           │      "Right tool for right job"   │                 │
+           │                 │                 │                 │
+           └─────────────────┼─────────────────┼─────────────────┘
+                             │                 │
+                             ▼                 ▼
+    ╔═══════════════════════════════════════════════════════════════════════╗
+    ║                                                                       ║
+    ║               🎭 STUDENT AS AI ORCHESTRA CONDUCTOR 🎭                 ║
+    ║                                                                       ║
+    ║  "This is a debugging problem"    ──────► 🔧 VITA                   ║
+    ║  "This needs code generation"     ──────► 🚀 Copilot               ║
+    ║  "This requires research depth"   ──────► 📚 Research Agent         ║
+    ║  "This is a brainstorming task"   ──────► 💬 General LLM            ║
+    ║                                                                       ║
+    ║           🧠 "I know which tool solves which problem" 🧠             ║
+    ║                                                                       ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
+    
+    🎯 THE TRANSFORMATION:
+    
+    ✅ Students become discriminating tool users (like professionals)
+    ✅ Faculty can verify domain-specific learning pathways  
+    ✅ Graduates interview with "I orchestrate AI teams"
+    ✅ Employers think: "This person thinks like we do. Hired."
+    
+    💰 SALARY IMPACT: $15,000 premium for orchestration skills
 ```
 
 ### The Transformation:
-- **FROM:** One tool for everything
-- **TO:** Right tool for each task
-- **STUDENT BECOMES:** AI Orchestra Conductor
+> **FROM:** Student with one very smart hammer  
+> **TO:** Student who conducts an AI orchestra  
+> **RESULT:** Graduates who think like industry professionals
+
+*Because the future belongs to orchestrators, not users.*
 
 ---
 
-## Slide 5: Proven Educational Innovations
+## Slide 5: Standing on Giants' Shoulders
 
-### Already Working:
-- **Miami Dade:** $82K → $100K graduate salaries
-- **Harvey Mudd:** 55% women in CS (sustained)
-- **UC Boulder:** 66% A-level mastery
+### Educational Innovation That Actually Works:
+> **Miami Dade:** Transformed a community college program  
+> *Result:* $82K → $100K graduate starting salaries
 
-### VITA's Approach:
-- Cognitive companion for debugging
-- Productive struggle with support
-- Complete data sovereignty (on-premise)
+> **Harvey Mudd:** Reimagined computer science culture  
+> *Result:* 55% women in CS (and it stayed that way)
 
-**Speaker Notes:** We're building on proven methods, not experimenting.
+> **UC Boulder:** Embraced productive struggle  
+> *Result:* 66% achieve A-level mastery
+
+### VITA's Foundation:
+*We're not experimenting. We're scaling what works.*
+
+<!-- Speaker Notes: "We're not experimenting with students' futures. We're scaling what works." -->
 
 ---
 
@@ -170,26 +196,29 @@ style: |
 - Prove the concept
 - Build faculty confidence
 
-**Speaker Notes:** We start small, prove value, then expand.
+<!-- Speaker Notes: "Phase 1 isn't just about debugging. It's about proving that students can handle sophisticated AI orchestration." -->
 
 ---
 
-## Slide 7: Why This Matters Now
+## Slide 7: The $15,000 Question
 
-### The $15,000 Question:
+### Two Graduates. Same Degree. Different Futures.
 
-**Traditional Graduate:**
-- "I can use ChatGPT" → $125,000
+**Traditional Graduate Interview:**  
+*"I'm really good with ChatGPT."*  
+**Offer:** $125,000
 
-**VITA-Trained Graduate:**
-- "I orchestrate specialized AI agents" → $140,000+
+**VITA Graduate Interview:**  
+*"I orchestrate specialized AI agents to solve complex problems."*  
+**Offer:** $140,000+
 
-### Industry Validation:
-- IBM: Agentic AI certificates
-- CrewAI: 100,000+ certified
-- Microsoft: 890,000+ AutoGen downloads
+### The Market Has Spoken:
+> **IBM:** Certifying agentic AI skills  
+> **CrewAI:** 100,000+ developers trained in multi-agent systems  
+> **Microsoft:** 890,000+ AutoGen downloads and counting  
 
-**[Hand off to Mallory]**
+*The question isn't whether this skill matters. The question is whether your graduates will have it.*
+
 
 ---
 
@@ -201,59 +230,72 @@ style: |
 
 ## Slide 8: The Journey Begins
 
-# From Educators to Developers
-## How We Built VITA Using Our Own Teaching Philosophy
+# The Professors Who Became Programmers
+## How We Ate Our Own Dog Food (And Lived to Tell About It)
 
 **November 2023 - Present**
 
 ---
 
-## Slide 9: The Problem Was Real (Nov 2023)
+## Slide 9: When Reality Bites (November 2023)
 
-### My Testing Results:
-| Model | Success Rate | Key Failure |
-|-------|-------------|-------------|
-| GPT-3.5 | 8/15 | Wrong error explanations |
-| Zephyr-7B | 6/15 | Used concepts not yet taught |
-| CodeLlama | 4/15 | Provided answers, not guidance |
+### The Brutal Truth About AI Tutors:
 
-### Critical Finding:
-> "Models gave students incorrect debugging information 50% of the time"
+| Model | Success Rate | What Went Wrong |
+|-------|-------------|----------------|
+| GPT-3.5 | 8/15 | Confident. Wrong. Dangerous. |
+| Zephyr-7B | 6/15 | Used concepts we hadn't taught yet |
+| CodeLlama | 4/15 | Gave answers instead of teaching |
 
-**Speaker Notes:** Even the best models failed at educational debugging support.
+### The Wake-Up Call:
+> *"50% of the time, our best AI models were teaching students the wrong thing."*
 
----
+*That's when we knew: The problem wasn't the technology. It was how we were using it.*
 
-## Slide 10: The Paradigm Shift (Feb 2024)
-
-### Discovery: Multi-Agent Orchestration
-
-**Our Breakthrough:**
-- Multiple specialized agents > One smart model
-- Each agent has specific expertise
-- Cognitive overload as learning feature, not bug
-
-### Philosophy:
-> "Hey, I see you've got a lot going on here. Want some help working through it?"
-
-**Speaker Notes:** We shifted from simplification to supported complexity.
+<!-- Speaker Notes: "The moment we realized our 'best' AI tutors were wrong half the time was the moment VITA was born." -->
 
 ---
 
-## Slide 11: Building Through Scrum
+## Slide 10: The Lightning Strike (February 2024)
 
-### Our Team = Our Method:
-- **Sprints** = Learning cycles
-- **User stories** = Student needs
-- **Daily standups** = Reflection
-- **Retrospectives** = Improvement
+### The Moment Everything Changed:
 
-### Key Pivot (June 2025):
-- Removed Autogen framework
-- Moved to Ollama
-- This wasn't failure - it was learning
+**Traditional Thinking:**  
+*"We need smarter AI."*
 
-**Speaker Notes:** We practiced what we preach about iterative development.
+**Our Breakthrough:**  
+*"We need AI that thinks like good teachers."*
+
+### The VITA Philosophy Was Born:
+> *"Hey, I see you've got a lot going on here. Want some help working through it?"*
+
+**Not:** "Here's the answer."  
+**Instead:** "Let's figure this out together."
+
+*Because the best teachers don't eliminate struggle—they make it productive.*
+
+<!-- Speaker Notes: "We stopped trying to make things easier and started making struggle productive." -->
+
+---
+
+## Slide 11: Practicing What We Preach
+
+### We Became Our Own Students:
+
+**Every Scrum Ritual Became Education:**
+> **Sprints** = Learning cycles  
+> **User stories** = Student needs  
+> **Daily standups** = Reflection  
+> **Retrospectives** = How we improve
+
+### The Beautiful Failure (June 2024):
+*We threw out our entire Autogen framework.*  
+*We pivoted to Ollama.*  
+*We called it Tuesday.*
+
+**Because failure isn't the opposite of learning—it's how learning happens.**
+
+<!-- Speaker Notes: "Every pivot we made taught us something about how students learn. We became our own case study." -->
 
 ---
 
@@ -293,28 +335,27 @@ Student → VITA Orchestrator → [Debugging Agent]
 - Integration planned post-pilot
 - Will provide portfolio verification
 
-**Speaker Notes:** We have working prototype, clear expansion path.
+<!-- Speaker Notes: "We're not selling you a vision. We're showing you a working reality." -->
 
 ---
 
-## Slide 14: What We've Proven
+## Slide 14: Proof of Concept, Proof of Life
 
-### Technical Proof:
-- Local models can provide quality help
-- Complete data sovereignty achievable
-- Educators can build production software
+### What We Proved Technically:
+> Local AI can teach as well as cloud AI  
+> Data sovereignty isn't just possible—it's practical  
+> Two professors can build enterprise software
 
-### Educational Proof:
-- Iterative development works
-- Scrum methodology transfers to EdTech
-- "Break Up The Monolith" concept viable
+### What We Proved Educationally:
+> Iterative development works for learning  
+> Students can handle cognitive complexity  
+> The "Orchestra" concept actually teaches
 
-### Ready to Deploy:
-- Working single-agent prototype
-- Demonstrates core concept
-- Pilot-ready for Spring 2025
+### What We're Ready to Prove Next:
+*We have a working prototype. We have willing students. We have you.*
 
-**[Hand off to Drew & Mallory together]**
+**The only question left: Are you ready to find out what your students can really do?**
+
 
 ---
 
@@ -326,8 +367,8 @@ Student → VITA Orchestrator → [Debugging Agent]
 
 ## Slide 15: The Pilot Program
 
-# Spring 2025 Pilot
-## Small Scale, Big Impact
+# The Proving Ground
+## Spring 2025: Where Theory Meets Reality
 
 ### Scope:
 - **2-3** intro programming sections
@@ -342,88 +383,98 @@ Student → VITA Orchestrator → [Debugging Agent]
 
 ---
 
-## Slide 16: What We'll Measure
+## Slide 16: How We'll Know We've Won
 
-### Success Metrics:
+### The Numbers That Matter:
 
-**Student Outcomes:**
-- Debugging success rate
-- Time to resolution
-- Assignment completion
+**For Students:**
+> Debugging success: From frustration to fluency  
+> Time to breakthrough: Faster, deeper learning  
+> Assignment completion: Higher quality, less stress
 
-**Faculty Benefits:**
-- Reduced syntax error office hours
-- More conceptual teaching time
-- Student question quality
+**For Faculty:**
+> Office hours: Fewer "Why won't this compile?" visits  
+> Class time: More concepts, less syntax firefighting  
+> Questions: "How does this work?" instead of "What's wrong?"
 
-**Technical Performance:**
-- System reliability
-- Response time
-- Resource usage
+**For Everyone:**
+> System reliability: It just works  
+> Response time: Fast enough to maintain flow  
+> Resources: Efficient, sustainable, scalable
+
+*Because good metrics tell a story, and we're writing a story about transformation.*
 
 ---
 
-## Slide 17: What You Provide
+## Slide 17: Your Investment (Surprisingly Modest)
 
 ### Infrastructure:
-- Modest GPU server (specs provided)
-- Student authentication access
+> One modest GPU server (we'll spec it out)  
+> Student authentication (what you already have)
 
 ### People:
-- 2-3 faculty champions
-- IT liaison
-- Admin sponsor
+> 2-3 faculty champions (who want to try something new)  
+> One IT liaison (who likes solving puzzles)  
+> One admin sponsor (who believes in student success)
 
 ### Time:
-- 2 hours training
-- 30 min/week feedback during pilot
+> 2 hours training (we make it worth your time)  
+> 30 minutes per week feedback (because iteration matters)
 
-**Speaker Notes:** Requirements intentionally modest.
+**Translation:** *Less than you spend on a single conference presentation. More impact than any conference you've attended.*
 
----
-
-## Slide 18: Risk Mitigation
-
-### Your Concerns Addressed:
-
-**"What if it fails?"**
-- Pilot is addition, not replacement
-- Quick rollback possible
-
-**"What about cheating?"**
-- VITA teaches process, not answers
-- Full audit trail
-
-**"Can we handle this?"**
-- Proven on community college infrastructure
-- Complete support provided
+<!-- Speaker Notes: Requirements intentionally modest. -->
 
 ---
 
-## Slide 19: Three Decisions Needed
+## Slide 18: The "What If" Answers
 
-## 1. Pilot Participation
-"Can we pilot VITA in Spring 2025?"
+### Let's Address the Elephant in the Room:
 
-## 2. Team Formation
-"Who are your champions?"
-- Faculty lead: _______
-- IT contact: _______
-- Admin sponsor: _______
+**"What if this completely fails?"**  
+*It's an addition, not a replacement. We can turn it off Tuesday if needed.*
 
-## 3. Success Definition
-"What metrics matter most to you?"
+**"What about academic integrity?"**  
+*VITA teaches process, not answers. Full audit trail. Faculty stays in control.*
 
-**Decision needed by: [Specific Date]**
+**"Do we have the technical chops for this?"**  
+*If Miami Dade can do it, so can you. We provide complete support.*
+
+**"What if our students hate it?"**  
+*Then we learn why, we iterate, we improve. That's the whole point.*
+
+*Because the biggest risk isn't trying something new—it's staying exactly where you are.*
+
+---
+
+## Slide 19: Three Questions That Change Everything
+
+### 1. The Courage Question
+*"Will you pilot VITA in Spring 2025?"*
+
+### 2. The People Question
+*"Who are your champions?"*
+> Faculty lead: The believer  
+> IT contact: The enabler  
+> Admin sponsor: The protector
+
+### 3. The Success Question
+*"How will you know this worked?"*
+
+**Because saying yes is easy. Saying yes to the right thing, with the right people, for the right reasons—that changes institutions.**
+
+*Decision needed by: [Date]*
 
 ---
 
 ## Slide 20: Your Next Actions
 
-### Before You Leave:
-☐ Identify faculty champion  
-☐ Check IT calendar for tech review  
-☐ Confirm pilot interest (yes/no)
+### Before You Walk Out This Door:
+> ☐ **Name your faculty champion** (the one who gets excited about new things)  
+> ☐ **Schedule the IT conversation** (they'll want to see the tech specs)  
+> ☐ **Decide: Are you in or out?** (Half-measures don't change institutions)  
+
+*Because saying "we'll think about it" is just another way of saying "we'll watch someone else do it first."*
 
 ### We Deliver by [Date]:
 ☐ Technical requirements  
@@ -439,41 +490,49 @@ Student → VITA Orchestrator → [Debugging Agent]
 
 ---
 
-## Slide 21: The Choice
+## Slide 21: The Last Slide
 
-## The Industry Has Moved
-## The Question Is Whether Education Leads or Lags
+## Here's What We Know:
+### Industry moved. Students are waiting. Time is running out.
 
-> "Every semester we wait is another cohort unprepared for multi-agent reality"
+> *"Every semester we wait is another cohort unprepared for multi-agent reality."*
 
-### Will You Be First or Last?
+## Here's What We Don't Know:
+### Whether you'll lead this change or watch it happen somewhere else.
 
-**Questions?**
+**The choice is simple. The consequences are permanent.**
+
+*Questions?*
 
 ---
 
 ## Additional Visual Slides
 
-### Data Sovereignty Slide
+### Data Sovereignty: Where Your Nightmares End
 
 ```
-                        ❌ CURRENT RISK                    ✅ VITA SOLUTION
-    
-    Student Data ────────► THE MONOLITH ────────► ?????    │    Student Data
-         PII                (External Cloud)      Unknown  │         PII
-    Faculty Work                                  Storage  │    Faculty Work
-                                                           │         │
-                     "We don't know where it goes"        │         ▼
-                                                           │   ╔═════════════╗
-                                                           │   ║   LOCAL     ║
-                                                           │   ║   VITA      ║
-                                                           │   ║   SERVER    ║
-                                                           │   ╚═════════════╝
-                                                           │         │
-                                                           │         ▼
-                                                           │   100% On-Campus
-                                                           │   FERPA Compliant
-                                                           │   IT Controlled
+    ❌ THE CURRENT NIGHTMARE               ✅ THE VITA SOLUTION
+
+    🏫 Student Data ─────────►         │    🏫 Student Data  
+    📝 Essays & Code                   │    📝 Essays & Code
+    🔍 Search History         THE      │    🔍 Learning Patterns
+    👤 Personal Info        MONOLITH   │           │
+                              │        │           ▼
+                              ▼        │    ╔═══════════════╗
+    ❓ "Who has our data?"    ?????     │    ║  🏰 YOUR       ║
+    ❓ "Where does it go?"     ???      │    ║    CAMPUS      ║
+    ❓ "Who can see it?"       ???      │    ║    SERVER      ║
+    ❓ "Can we get it back?"   ???      │    ╚═══════════════╝
+                                       │           │
+      🚨 COMPLIANCE NIGHTMARE 🚨       │           ▼
+                                       │    ✅ 100% On-Campus
+                                       │    ✅ FERPA Compliant  
+                                       │    ✅ IT Controlled
+                                       │    ✅ Faculty Owned
+                                       │
+                                       │  💡 "We know exactly
+                                       │     where our data is:
+                                       │     RIGHT HERE."
 ```
 
 ### Skill Development Progression Slide
@@ -726,24 +785,25 @@ For technical requirements: [IT contact]
 
 ### The Numbers That Matter:
 
-**Industry Reality:**
-- 51% already using multi-agent systems
-- $15,000 salary premium for orchestration skills
-- 170 million new AI jobs coming
+**Industry Reality Check:**
+> • **51%** of companies already orchestrating multiple AI agents  
+> • **$15,000** salary gap between users and orchestrators  
+> • **170 million** new AI jobs. How many will your students get?  
 
-**Educational Success:**
-- 200% retention improvement possible
-- 66% can achieve mastery with iteration
-- 55% women in CS achievable and sustainable
+**Educational Proof Points:**
+> • **200%** retention improvement (when students see the point)  
+> • **66%** achieve mastery (when struggle becomes productive)  
+> • **55%** women in CS (when culture matches capability)  
 
-**VITA Readiness:**
-- 1 working prototype
-- 8 months of development
-- 3 successful pivots
-- 100% local data sovereignty
+**VITA Reality:**
+> • **1** working prototype (not a PowerPoint promise)  
+> • **8** months of hard-won development wisdom  
+> • **3** pivots that made us stronger  
+> • **100%** data sovereignty (your data never leaves campus)  
 
-**The Bottom Line:**
-Multi-agent AI orchestration is not the future - it's the present. VITA helps your students join it.
+**The Unavoidable Truth:**
+*Multi-agent AI orchestration isn't the future anymore. It's Tuesday.*  
+*VITA helps your students show up ready for Wednesday.*
 
 ---
 

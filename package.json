@@ -27,7 +27,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "slides:dev": "marp -w -s presentations/VITA_PRESENTATION.md",
+    "slides:dev": "marp -w -s presentations/",
     "slides:build": "marp presentations/VITA_PRESENTATION.md -o dist/vita-slides.html",
     "slides:pdf": "marp presentations/VITA_PRESENTATION.md --pdf -o dist/vita-slides.pdf",
     "slides:pptx": "marp presentations/VITA_PRESENTATION.md --pptx -o dist/vita-slides.pptx",
