@@ -138,21 +138,17 @@ style: |
 
 ## The Reason We're All Here
 
-**Traditional Grads:**
-👤 "I can use [The Monolith] to help me code."
+**The CP&D Tools Team:**
+- David Teter: Tools Team Manager, CP&D Chair
+- Mallory Milstead: Lead Developer, VITA
+- Brittany Smith: Developer (multiple tools)
+- Hana Seidi: Product Owner (pedagogical methods)
+- Anthony Cameron: Product Owner (institutional AI policy alignment)
 
-
-**VITA + Capstone Grads:**
-👤 "I orchestrate specialized AI agents for 
-- debugging 
-- research
-- implementation
-based on task requirements"
-
->Which student is *aligned* with workforce realities?
+>Our aim: To be, rather than to seem.
 
 ---
-## The Reality Check
+## We Need to Talk about [The Monolith]
 
 ### Industry Has Already Moved:
 - **51%** of companies use multiple AI agents in production
@@ -200,8 +196,8 @@ based on task requirements"
 
 
 
-
 > Our Perspective: Turn the "AI tool user" into a "AI agent manager"
+> This starts with *one agent*, VITA.
 
 ---
 ```text
@@ -239,15 +235,13 @@ based on task requirements"
 - Growth mindset installed naturally ("what else does the agent need from me?")
 
 > The journey begins with VITA, your "growth mindset" TA.
+> It continues through their *AI-required* capstone software project.
 
 ---
 
 ## Growth Mindset Case Studies in CS
+- (on request)
 
-### Already Showing Results:
-- **Miami Dade:** $82K → $100K graduate salaries
-- **Harvey Mudd:** 55% women in CS (sustained)
-- **UC Boulder:** 66% A-level mastery
 
 ### VITA's Approach is Aligned:
 - Cognitive "personal trainer" for debugging
@@ -279,16 +273,29 @@ based on task requirements"
 
 ---
 
+### Data Sovereignty Comparison
+
+**❌ CURRENT RISK**
+Student Data → THE MONOLITH (External Cloud) → Unknown Storage
+"We don't know where it goes"
+
+**✅ VITA SOLUTION**
+Student Data → LOCAL VITA SERVER → 100% On-Campus
+FERPA Compliant • IT Controlled
+
+---
+
 <!-- _class: lead -->
 
 ## Our Journey
-## From Educators to Developers
+**From Educators to Developers**
 
 **November 2023 - Present**
 - **David Teter**: Tools Group Manager
 - **Mallory Milstead**: Lead VITA Developer
-- **Hana Seidi**: Product Owner / Pedagogy Lead
 - **Brittany Smith**: Developer
+- **Hana Seidi**: Product Owner / Pedagogy Lead
+- **Anthony Cameron**: AI Policy Alignment
 - **Drew Norris**: Project Manager / Scrum Master
 
 ---
@@ -328,7 +335,7 @@ based on task requirements"
 
 ### Key Pivot (June 2025):
 - Removed Autogen framework
-- Moved to Ollama
+- Moved to Ollama *single-agent* MVP
 - This wasn't failure - it was learning
 
 ---
@@ -373,20 +380,6 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 ### (Live Demo)
 
 ---
-
-## Spring 2026 Pilot (Proposal)
-
-### Scope:
-- **2-3** CTI110 programming sections
-- **48-73** students total
-- **One** specialized agent (debugging)
-
-### Support Provided:
-- Faculty training (2 hours)
-- Weekly check-ins
-- Full documentation
-
----
 ### Student Outcome Metrics:
 - Reflection survey
 - In-tool feedback (helpful yes/no)
@@ -404,7 +397,7 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 
 ---
 
-## The Ask
+## There's No Ask Yet
 
 ### Infrastructure:
 - *magnamater* inference server (NOW LIVE)
@@ -413,31 +406,15 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 ### People:
 - 2-3 faculty champions (CTI 110 stakeholders are IN)
 - IT liaison (already on task)
-- Admin sponsor
+- Admin sponsor (Thanks for coming today!)
 
-
-
----
-### Your Concerns Addressed:
-
-**"What if it fails?"**
-- Pilot is addition, not replacement
-- Quick rollback possible
-
-**"What about cheating?"**
-- VITA teaches process, not answers
-- Full audit trail
-
-**"Can we handle this?"**
-- Proven on community college infrastructure
-- Institutional support is key
 
 ---
 
 ## Three Decisions Needed
 
-### 1. Pilot Participation
-"Can we pilot VITA in Spring 2026?"
+### 1. Continued Development
+"Can we fund VITA development for 2025SU?"
 
 ### 2. Team Formation
 "Who are your champions?"
@@ -451,28 +428,16 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 ## Your Next Actions
 
 ### Before You Leave:
-☐ Identify faculty champion  
-☐ Confirm pilot interest (yes/no)
+☐ Contact information (on request) 
+☐ Confirm 25SU interest (yes/no)
 
 
 ### Contact:
-**David Teter:** teterd@faytechcc.edu - Tools Team Manager
+**David:** teterd@faytechcc.edu - Tools Team Manager
 **Drew:** norrisa@faytechcc.edu     - Platform  & Architecture  
-**Mallory:** milsteam@faytechcc.edu - Technical & Training
 
-### Further Demos on Request!
 
----
 
-### Data Sovereignty Comparison
-
-**❌ CURRENT RISK**
-Student Data → THE MONOLITH (External Cloud) → Unknown Storage
-"We don't know where it goes"
-
-**✅ VITA SOLUTION**
-Student Data → LOCAL VITA SERVER → 100% On-Campus
-FERPA Compliant • IT Controlled
 
 ---
 ## Industry Validation
