@@ -1,0 +1,171 @@
+==============================================================================
+                    SLIDE 1: THE PROBLEM - EVERYONE USES THE MONOLITH
+==============================================================================
+
+                              ╔══════════════════╗
+                              ║                  ║
+                              ║   THE MONOLITH   ║
+                              ║    (One AI for   ║
+                              ║    Everything)   ║
+                              ║                  ║
+                              ╚════════╤═════════╝
+                                       │
+                ┌──────────────────────┼──────────────────────┐
+                │                      │                      │
+                ▼                      ▼                      ▼
+         "Help me debug"        "Plan a party"         "Write my essay"
+              👨‍🎓                    👩‍🎓                    🧑‍🎓
+           Student A             Student B             Student C
+        
+        ❌ No skill differentiation
+        ❌ No tool specialization  
+        ❌ Black box dependency
+        ❌ Faculty can't verify learning
+
+==============================================================================
+                    SLIDE 2: THE FUTURE - MULTI-AGENT ORCHESTRATION
+==============================================================================
+
+     ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐
+     │    VITA     │  │   GitHub    │  │   Research  │  │   General   │
+     │  Debugging  │  │   Copilot   │  │    Agent    │  │     LLM     │
+     │   Partner   │  │   Coding    │  │  Academic   │  │   Social    │
+     └──────┬──────┘  └──────┬──────┘  └──────┬──────┘  └──────┬──────┘
+            │                 │                 │                 │
+            │                 │                 │                 │
+     ┌──────▼─────────────────▼─────────────────▼─────────────────▼──────┐
+     │                                                                    │
+     │                    🎓 STUDENT AS AI ORCHESTRATOR                   │
+     │                                                                    │
+     │    "I need to debug" ──────► VITA                                │
+     │    "I need to implement" ───► Copilot                            │
+     │    "I need to research" ────► Research Agent                     │
+     │    "I need to plan" ────────► General LLM                        │
+     │                                                                    │
+     └────────────────────────────────────────────────────────────────────┘
+     
+     ✅ Develops discrimination skills
+     ✅ Matches industry practice (51% companies use multiple agents)
+     ✅ Transparent, specialized tools
+     ✅ Faculty can verify domain-specific learning
+
+==============================================================================
+                    SLIDE 3: THE TRANSFORMATION JOURNEY
+==============================================================================
+
+    CURRENT STATE                    VITA PHASE 1                    FUTURE STATE
+    Fall 2024                        Spring 2025                     Fall 2025+
+    
+    ╔═══════════╗                   ╔═══════════╗                   ╔═══╗ ╔═══╗
+    ║           ║                   ║           ║                   ║ V ║ ║ G ║
+    ║     🌊    ║                   ║     🌊    ║      ┌────►      ║ I ║ ║ H ║
+    ║ MONOLITH  ║      ──────►      ║ MONOLITH  ║      │           ║ T ║ ║ C ║
+    ║           ║                   ║           ║      │           ║ A ║ ║ P ║
+    ║           ║                   ╚═══════════╝      │           ╚═══╝ ╚═══╝
+    ╚═══════════╝                          +           │           ╔═══╗ ╔═══╗
+         ▲                           ╔═══════════╗     │           ║ R ║ ║ D ║
+         │                           ║   VITA    ║─────┘           ║ A ║ ║ B ║
+    All queries                      ║ Debugging ║                 ║ G ║ ║ G ║
+                                    ╚═══════════╝                 ╚═══╝ ╚═══╝
+                                          ▲                       
+                                          │                      Multiple specialized
+                                  Programming queries            agents for different
+                                                                academic tasks
+
+==============================================================================
+                    SLIDE 4: DATA SOVEREIGNTY - LOCAL CONTROL
+==============================================================================
+
+                        ❌ CURRENT RISK                    ✅ VITA SOLUTION
+    
+    Student Data ────────► THE MONOLITH ────────► ?????    │    Student Data
+         PII                (External Cloud)      Unknown  │         PII
+    Faculty Work                                  Storage  │    Faculty Work
+                                                           │         │
+                     "We don't know where it goes"        │         ▼
+                                                           │   ╔═════════════╗
+                                                           │   ║   LOCAL     ║
+                                                           │   ║   VITA      ║
+                                                           │   ║   SERVER    ║
+                                                           │   ╚═════════════╝
+                                                           │         │
+                                                           │         ▼
+                                                           │   100% On-Campus
+                                                           │   FERPA Compliant
+                                                           │   IT Controlled
+
+==============================================================================
+                    SLIDE 5: SKILL DEVELOPMENT PROGRESSION
+==============================================================================
+
+                        TRADITIONAL APPROACH
+                        
+    Semester 1 ──────────────────────────────────────► Semester 4
+         │                                                   │
+         ▼                                                   ▼
+    "Just Google it" ────────────────────────────► "Just ask ChatGPT"
+                        
+                        No skill progression
+    ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ 
+    
+                        VITA APPROACH
+                        
+    Semester 1 ──────────────────────────────────────► Semester 4
+         │                                                   │
+         ▼                                                   ▼
+    Learn Debugging     Multi-Agent      Industry        Graduate as
+    with VITA    ───►   Coordination ───► Patterns ───►  AI Orchestrator
+         │                    │                │               │
+    Single specialized   Add GitHub      Full toolkit    $140K+ salary
+         agent            Copilot         mastery        potential
+
+==============================================================================
+                    SLIDE 6: INDUSTRY ALIGNMENT
+==============================================================================
+
+    WHAT EMPLOYERS SEE FROM TRADITIONAL GRADS:
+    
+    👤 "I can use ChatGPT"
+    └──► Single tool dependency
+    └──► No specialization understanding
+    └──► Can't debug without AI
+    
+    Starting Salary: $125,000
+    
+    ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+    
+    WHAT EMPLOYERS SEE FROM VITA GRADS:
+    
+    👤 "I orchestrate specialized AI agents for different tasks"
+    └──► Multi-agent coordination
+    └──► Tool discrimination skills  
+    └──► Debugging expertise with AI partnership
+    └──► Ready for Agile/Scrum workflows (97% of companies)
+    
+    Starting Salary: $140,000+
+    
+    IBM: "This is who we're certifying"
+    CrewAI: "100,000+ developers trained in this"
+    51% of companies: "This is what we need NOW"
+
+==============================================================================
+                    SLIDE 7: PEER INSTITUTIONS COMPARISON
+==============================================================================
+
+                        Community College Landscape
+    
+    ┌─────────────────────────────────────────────────────────────┐
+    │                                                             │
+    │   Miami Dade    UF (12,000      Duke          Our College  │
+    │   $2.8M NSF     students)       (System Dev)   with VITA    │
+    │      ✓             ✓               ✓              ✓        │
+    │                                                             │
+    │   Harvey Mudd   UC Berkeley     Carnegie        Future     │
+    │   55% women     Multi-agent     Mellon         Ready!      │
+    │      ✓             ✓               ✓              ✓        │
+    │                                                             │
+    └─────────────────────────────────────────────────────────────┘
+    
+    "We're not behind - we're leading with practical implementation"
+
+==============================================================================

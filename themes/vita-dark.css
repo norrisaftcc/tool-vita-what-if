@@ -1,0 +1,482 @@
+/* 
+  VITA Dark Theme for Marp
+  A sophisticated dark theme that makes simplicity beautiful
+*/
+
+/* @theme vita-dark */
+
+@import 'default';
+
+/* Custom fonts for a modern, clean look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  /* Core Dark Palette */
+  --vita-bg-primary: #0A0A0B;        /* Rich black background */
+  --vita-bg-secondary: #141416;      /* Slightly lighter for contrast */
+  --vita-bg-tertiary: #1C1C1F;       /* Card/section backgrounds */
+  
+  /* VITA Brand Colors */
+  --vita-purple: #8B5CF6;             /* Primary brand color */
+  --vita-purple-light: #A78BFA;      /* Lighter variant */
+  --vita-purple-dark: #6D28D9;       /* Darker variant */
+  --vita-purple-glow: rgba(139, 92, 246, 0.25); /* Subtle glow effect */
+  
+  /* Accent Colors */
+  --vita-cyan: #06B6D4;               /* Data highlights */
+  --vita-emerald: #10B981;            /* Success/positive */
+  --vita-amber: #F59E0B;              /* Warning/attention */
+  --vita-rose: #F43F5E;               /* Error/critical */
+  
+  /* Text Colors */
+  --vita-text-primary: #F3F4F6;      /* Main text */
+  --vita-text-secondary: #9CA3AF;    /* Secondary text */
+  --vita-text-muted: #6B7280;        /* Muted/subtle text */
+  
+  /* Utility Colors */
+  --vita-border: rgba(255, 255, 255, 0.08);
+  --vita-shadow: rgba(0, 0, 0, 0.5);
+  --vita-highlight: rgba(139, 92, 246, 0.1);
+}
+
+/* Base Section Styles */
+section {
+  background: linear-gradient(135deg, var(--vita-bg-primary) 0%, var(--vita-bg-secondary) 100%);
+  color: var(--vita-text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 28px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+/* Special section classes */
+section.lead {
+  background: radial-gradient(ellipse at top, var(--vita-bg-secondary) 0%, var(--vita-bg-primary) 50%);
+  text-align: center;
+}
+
+section.title {
+  background: linear-gradient(135deg, var(--vita-bg-primary) 0%, #0F0F12 50%, var(--vita-bg-secondary) 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+section.title::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, var(--vita-purple-glow) 0%, transparent 70%);
+  animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+/* Typography */
+h1 {
+  color: var(--vita-text-primary);
+  font-size: 2.5em;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+  background: linear-gradient(135deg, var(--vita-text-primary) 0%, var(--vita-purple-light) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  color: var(--vita-purple-light);
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.6em;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vita-purple) 0%, transparent 100%);
+}
+
+h3 {
+  color: var(--vita-text-primary);
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h4, h5, h6 {
+  color: var(--vita-text-secondary);
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+
+/* Paragraphs and Text */
+p {
+  color: var(--vita-text-primary);
+  line-height: 1.7;
+  margin-bottom: 1em;
+}
+
+strong {
+  color: var(--vita-purple-light);
+  font-weight: 600;
+}
+
+em {
+  color: var(--vita-cyan);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Links */
+a {
+  color: var(--vita-purple);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--vita-purple-light);
+  border-bottom-color: var(--vita-purple-light);
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.5em;
+  margin: 1em 0;
+}
+
+li {
+  color: var(--vita-text-primary);
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+ul li::marker {
+  color: var(--vita-purple);
+}
+
+ol li::marker {
+  color: var(--vita-purple);
+  font-weight: 600;
+}
+
+/* Code Blocks - Perfect for ASCII Art */
+pre {
+  background: var(--vita-bg-tertiary);
+  border: 1px solid var(--vita-border);
+  border-radius: 12px;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  overflow-x: auto;
+  position: relative;
+  box-shadow: 0 10px 40px var(--vita-shadow);
+}
+
+pre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--vita-purple) 0%, var(--vita-cyan) 50%, var(--vita-purple) 100%);
+  border-radius: 12px 12px 0 0;
+}
+
+code {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.9em;
+  color: var(--vita-cyan);
+  background: rgba(6, 182, 212, 0.1);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+pre code {
+  color: var(--vita-text-primary);
+  background: transparent;
+  padding: 0;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+/* ASCII Art Specific Styling */
+pre.ascii-art {
+  color: var(--vita-purple-light);
+  text-align: center;
+  font-size: 1.1em;
+  background: radial-gradient(ellipse at center, var(--vita-highlight) 0%, var(--vita-bg-tertiary) 70%);
+  border-color: var(--vita-purple-glow);
+  text-shadow: 0 0 20px var(--vita-purple-glow);
+}
+
+/* Tables for Data */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5em 0;
+  background: var(--vita-bg-tertiary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--vita-shadow);
+}
+
+thead {
+  background: linear-gradient(90deg, var(--vita-purple-dark) 0%, var(--vita-purple) 100%);
+}
+
+th {
+  color: var(--vita-text-primary);
+  font-weight: 600;
+  padding: 1em;
+  text-align: left;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+td {
+  color: var(--vita-text-primary);
+  padding: 1em;
+  border-top: 1px solid var(--vita-border);
+}
+
+tbody tr:hover {
+  background: var(--vita-highlight);
+  transition: background 0.3s ease;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--vita-purple);
+  padding-left: 1.5em;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: var(--vita-text-secondary);
+  background: var(--vita-highlight);
+  padding: 1em 1.5em;
+  border-radius: 0 8px 8px 0;
+}
+
+blockquote strong {
+  color: var(--vita-text-primary);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px var(--vita-shadow);
+}
+
+/* Special Data Highlight Classes */
+.stat {
+  display: inline-block;
+  background: var(--vita-bg-tertiary);
+  border: 1px solid var(--vita-purple-glow);
+  border-radius: 8px;
+  padding: 0.8em 1.2em;
+  margin: 0.5em;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--vita-purple-light);
+  display: block;
+  text-shadow: 0 0 20px var(--vita-purple-glow);
+}
+
+.stat-label {
+  font-size: 0.8em;
+  color: var(--vita-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.3em;
+  display: block;
+}
+
+/* Emphasis Classes */
+.highlight-purple {
+  color: var(--vita-purple-light);
+  font-weight: 600;
+}
+
+.highlight-cyan {
+  color: var(--vita-cyan);
+  font-weight: 600;
+}
+
+.highlight-emerald {
+  color: var(--vita-emerald);
+  font-weight: 600;
+}
+
+.highlight-amber {
+  color: var(--vita-amber);
+  font-weight: 600;
+}
+
+.highlight-rose {
+  color: var(--vita-rose);
+  font-weight: 600;
+}
+
+/* Centered Content */
+.center {
+  text-align: center;
+}
+
+/* Split Layout */
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  align-items: start;
+}
+
+/* Footer/Header Styling */
+header, footer {
+  color: var(--vita-text-muted);
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+}
+
+footer {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+  right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Page Numbers */
+section::after {
+  color: var(--vita-text-muted);
+  font-size: 0.6em;
+  font-weight: 600;
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+}
+
+/* Transitions and Animations */
+* {
+  transition: color 0.3s ease, background 0.3s ease, border 0.3s ease;
+}
+
+/* Mermaid Diagram Support */
+.mermaid {
+  background: var(--vita-bg-tertiary);
+  padding: 1.5em;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Progress Bar */
+.progress {
+  width: 100%;
+  height: 8px;
+  background: var(--vita-bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 1em 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--vita-purple) 0%, var(--vita-cyan) 100%);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+/* Call to Action Buttons */
+.cta {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--vita-purple) 0%, var(--vita-purple-dark) 100%);
+  color: var(--vita-text-primary);
+  padding: 0.8em 2em;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 1em 0.5em;
+  box-shadow: 0 4px 20px var(--vita-purple-glow);
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--vita-purple-glow);
+  border-bottom: none;
+}
+
+/* Grid Layout for Features */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.feature-card {
+  background: var(--vita-bg-tertiary);
+  border: 1px solid var(--vita-border);
+  border-radius: 12px;
+  padding: 1.5em;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: var(--vita-purple-glow);
+  box-shadow: 0 8px 30px var(--vita-shadow);
+  transform: translateY(-4px);
+}
+
+/* Subtle Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Print Styles */
+@media print {
+  section {
+    background: white !important;
+    color: black !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+  }
+}

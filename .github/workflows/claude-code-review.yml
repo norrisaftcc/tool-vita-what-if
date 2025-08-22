@@ -1,0 +1,187 @@
+name: Claude Code Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main, develop]
+  pull_request_review_request:
+    types: [requested]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  claude-review:
+    name: Claude Code Review
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.draft == false
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v41
+      with:
+        files: |
+          **/*.ts
+          **/*.tsx
+          **/*.js
+          **/*.jsx
+          **/*.py
+          **/*.md
+          **/*.yml
+          **/*.yaml
+          **/*.json
+          
+    - name: Check if Claude review needed
+      id: check-review
+      run: |
+        echo "files_changed=${{ steps.changed-files.outputs.any_changed }}" >> $GITHUB_OUTPUT
+        echo "changed_files=${{ steps.changed-files.outputs.all_changed_files }}" >> $GITHUB_OUTPUT
+        
+    - name: Add Claude review pending label
+      if: steps.check-review.outputs.files_changed == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          await github.rest.issues.addLabels({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            labels: ['claude-review:pending']
+          });
+          
+    - name: Request Claude review
+      if: steps.check-review.outputs.files_changed == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const path = require('path');
+          
+          // Read configuration
+          let config = {};
+          try {
+            const configPath = '.github/claude-review-config.json';
+            if (fs.existsSync(configPath)) {
+              config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+            }
+          } catch (error) {
+            console.log('Using default configuration');
+          }
+          
+          const changedFiles = `${{ steps.check-review.outputs.changed_files }}`.split(' ');
+          const prNumber = context.issue.number;
+          const prTitle = context.payload.pull_request.title;
+          const prBody = context.payload.pull_request.body || '';
+          
+          // Create review request comment
+          const reviewComment = `## 🤖 Claude Code Review Request
+          
+**PR Analysis:**
+- **Title:** ${prTitle}
+- **Files Changed:** ${changedFiles.length}
+- **Files:** ${changedFiles.join(', ')}
+
+**Review Checklist:**
+- [ ] Code quality and best practices
+- [ ] Security considerations
+- [ ] Performance implications
+- [ ] Documentation completeness
+- [ ] Test coverage
+- [ ] Breaking changes identification
+- [ ] Dependency analysis
+
+**Claude Review Status:** ⏳ Pending
+
+---
+*This review was automatically requested based on the changed files. A human reviewer with Claude access will complete the review shortly.*
+
+**Setup Requirements:**
+- Reviewer must have Claude access enabled
+- 2FA authentication required for security operations
+- See \`.github/CLAUDE_REVIEW_SETUP.md\` for detailed instructions`;
+
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: prNumber,
+            body: reviewComment
+          });
+          
+    - name: Check for required reviewers
+      if: steps.check-review.outputs.files_changed == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          // Get team members or specific users who can perform Claude reviews
+          const claudeReviewers = ['norrisaftcc']; // Add more reviewers as needed
+          
+          try {
+            await github.rest.pulls.requestReviewers({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+              reviewers: claudeReviewers
+            });
+          } catch (error) {
+            console.log('Could not request reviewers automatically:', error.message);
+          }
+
+  claude-review-status:
+    name: Claude Review Status Check
+    runs-on: ubuntu-latest
+    if: github.event.action == 'submitted' && github.event.review.body contains '🤖 Claude Review'
+    
+    steps:
+    - name: Update Claude review status
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const reviewBody = context.payload.review.body;
+          const prNumber = context.issue.number;
+          
+          // Parse Claude review status
+          let newLabel = 'claude-review:pending';
+          if (reviewBody.includes('✅ APPROVED') || reviewBody.includes('🟢 APPROVED')) {
+            newLabel = 'claude-review:approved';
+          } else if (reviewBody.includes('🔴 CHANGES REQUESTED') || reviewBody.includes('❌ BLOCKED')) {
+            newLabel = 'claude-review:changes-requested';
+          } else if (reviewBody.includes('💬 COMMENTS')) {
+            newLabel = 'claude-review:commented';
+          }
+          
+          // Remove old Claude review labels
+          const labelsToRemove = [
+            'claude-review:pending',
+            'claude-review:approved', 
+            'claude-review:changes-requested',
+            'claude-review:commented'
+          ];
+          
+          for (const label of labelsToRemove) {
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                name: label
+              });
+            } catch (error) {
+              // Label might not exist, continue
+            }
+          }
+          
+          // Add new label
+          await github.rest.issues.addLabels({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: prNumber,
+            labels: [newLabel]
+          });

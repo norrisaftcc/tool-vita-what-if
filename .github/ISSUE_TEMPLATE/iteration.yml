@@ -1,0 +1,126 @@
+name: "🚀 Iteration Task"
+description: "Create a 6-hour iteration task following The Algorithm™"
+title: "[ITER-XXX] "
+labels: ["iteration", "the-algorithm"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## The Algorithm™ Iteration Template
+        Every iteration must deliver working software in 6 hours or less.
+        Remember: Simplify first, then build.
+
+  - type: input
+    id: iteration_number
+    attributes:
+      label: Iteration Number
+      description: "Sequential iteration number (e.g., ITER-047)"
+      placeholder: "ITER-XXX"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: iteration_type
+    attributes:
+      label: Iteration Type
+      description: "What type of work is this iteration?"
+      options:
+        - Feature Development
+        - Simplification Sprint
+        - Bug Squash
+        - Performance Boost
+        - Test Enhancement
+        - Documentation Update
+    validations:
+      required: true
+
+  - type: textarea
+    id: customer_value
+    attributes:
+      label: Customer Value Statement
+      description: "What value does this iteration deliver to the customer?"
+      placeholder: |
+        As a [type of user]
+        I want [some goal]
+        So that [some reason]
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: "What must be true for this iteration to be complete?"
+      placeholder: |
+        - [ ] Working software deployed
+        - [ ] Tests passing at 100%
+        - [ ] Code simplified by X%
+        - [ ] Customer can use feature
+    validations:
+      required: true
+
+  - type: textarea
+    id: simplification_plan
+    attributes:
+      label: Simplification Opportunities
+      description: "What can we remove or simplify in this iteration?"
+      placeholder: |
+        - Remove unused dependency X
+        - Simplify function Y to 5 lines
+        - Eliminate abstraction Z
+        - Combine modules A and B
+    validations:
+      required: false
+
+  - type: input
+    id: time_estimate
+    attributes:
+      label: Time Estimate (hours)
+      description: "Must be 6 hours or less"
+      placeholder: "4"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity_impact
+    attributes:
+      label: Expected Complexity Impact
+      description: "Will this iteration increase or decrease complexity?"
+      options:
+        - "Decrease (removing code)"
+        - "Neutral (refactoring)"
+        - "Increase (new feature) - requires justification"
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_approach
+    attributes:
+      label: Technical Approach
+      description: "Brief technical plan (remember: functional core, imperative shell)"
+      placeholder: |
+        1. Create pure function for X
+        2. Add minimal UI component
+        3. Connect with existing Y
+        4. Test and deploy
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-Iteration Checklist
+      description: "Confirm before starting iteration"
+      options:
+        - label: "I have reviewed existing code for simplification opportunities"
+          required: true
+        - label: "This iteration can be completed in 6 hours or less"
+          required: true
+        - label: "The customer value is clear and measurable"
+          required: true
+        - label: "I will deploy working software at iteration end"
+          required: true
+        - label: "Tests will be written alongside implementation"
+          required: false

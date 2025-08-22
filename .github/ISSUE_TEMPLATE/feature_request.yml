@@ -1,0 +1,164 @@
+name: Feature Request
+description: Propose a new feature or enhancement for the tool-vita-what-if project
+title: "[FEATURE] "
+labels: ["feature", "needs-review"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Please provide comprehensive details to help us understand the value and feasibility of your request.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm you have completed these steps before submitting this feature request.
+      options:
+        - label: I have searched existing issues and feature requests to ensure this hasn't been proposed before
+          required: true
+        - label: I have reviewed the project roadmap and this feature aligns with project goals
+          required: true
+        - label: I understand this feature may require significant development effort
+          required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to achieving project objectives?
+      options:
+        - P3 - Low (nice to have, not essential)
+        - P2 - Medium (improves user experience significantly)
+        - P1 - High (critical for key user workflows)
+        - P0 - Critical (essential for product viability)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What type of feature are you requesting?
+      options:
+        - UI/UX Enhancement
+        - API/Backend Functionality
+        - Performance Improvement
+        - Developer Experience
+        - Integration/Third-party
+        - Documentation
+        - Testing/Quality Assurance
+        - Security Enhancement
+        - Accessibility Improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? Who experiences this problem?
+      placeholder: |
+        Currently, users cannot...
+        This causes problems because...
+        The impact is...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution in detail
+      placeholder: |
+        I propose that we add...
+        This would work by...
+        Users would benefit because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-stories
+    attributes:
+      label: User Stories
+      description: Provide user stories that capture the desired functionality
+      placeholder: |
+        As a [user type], I want [functionality] so that [benefit].
+        
+        Example:
+        As a developer, I want to see real-time performance metrics so that I can identify bottlenecks quickly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define the specific conditions that must be met for this feature to be considered complete
+      placeholder: |
+        - [ ] Feature does X when Y condition is met
+        - [ ] Error handling works for edge case Z
+        - [ ] Performance meets requirement A
+        - [ ] Documentation is updated
+        - [ ] Tests cover new functionality
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: What alternative approaches have you considered?
+      placeholder: |
+        Alternative 1: ...
+        Pros: ...
+        Cons: ...
+        
+        Alternative 2: ...
+        Pros: ...
+        Cons: ...
+
+  - type: input
+    id: business-value
+    attributes:
+      label: Business/User Value
+      description: What is the expected business or user value of this feature?
+      placeholder: "Reduces user task completion time by 30%, increases retention"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: effort-estimate
+    attributes:
+      label: Estimated Effort
+      description: What is your rough estimate of implementation complexity?
+      options:
+        - XS (1-2 days)
+        - S (3-5 days)
+        - M (1-2 weeks)
+        - L (2-4 weeks)
+        - XL (1+ months)
+        - Unknown/Requires Investigation
+
+  - type: textarea
+    id: technical-considerations
+    attributes:
+      label: Technical Considerations
+      description: Are there any technical constraints, dependencies, or considerations?
+      placeholder: |
+        Dependencies on: ...
+        Potential technical risks: ...
+        Integration points: ...
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups/Wireframes
+      description: If applicable, provide mockups, wireframes, or visual examples
+      placeholder: "Attach images or provide links to design mockups"
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other context, research, or examples that support this feature request
