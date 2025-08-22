@@ -122,11 +122,9 @@ style: |
 
 <!-- _class: lead -->
 
-## Tools Team -> Creating a Virtual TA
+## Creating a Virtual TA
 
-### and chipping a piece off of [The Monolith]
-
-#### (by learning to build our own AI agent)
+### (by learning to build our own AI agent)
 
 
 
@@ -138,38 +136,30 @@ style: |
 
 <!-- _class: lead -->
 
-![height:600px](image1.png)
+## The Reason We're All Here
+
+**Traditional Grads:**
+👤 "I can use [The Monolith] to help me code."
 
 
----
+**VITA + Capstone Grads:**
+👤 "I orchestrate specialized AI agents for 
+- debugging 
+- research
+- implementation
+based on task requirements"
 
-
-![width:900px](image2.png)
-
----
-## Life with [The Monolith]
-
-> *"I spent 3 hours debugging a hierarchical menu. ChatGPT gave me 6 'fixes' - none worked. I don't even know what questions to ask anymore."*
-
-**— Sarah, CTI 110 Student, 2:47 AM (AI Generated)**
-
-This is why we are building VITA.
+>Which student is *aligned* with workforce realities?
 
 ---
-## We Need to Talk about [The Monolith]
+## The Reality Check
 
 ### Industry Has Already Moved:
 - **51%** of companies use multiple AI agents in production
 - **$140K+** salaries for multi-agent specialists  
 - **78%** of employers need orchestration skills NOW
 
-### That $15,000 Gap Means:
-- **$315/month** — A reliable car vs. the bus
-- **$1,250/month** — Your own place vs. roommates forever  
-- **3 years faster** — Student loans paid off
-- The difference between surviving and **thriving**
-
-### Education Is Still Dealing with [The Monolith]:
+### Education Is Still Catching Up:
 - Teaching single-tool usage, or worse
 - "Just use [The Monolith]" (or "Don't use [it]")
 - No evaluation or selection skills by model or platform
@@ -210,9 +200,8 @@ This is why we are building VITA.
 
 
 
-> "What if AI didn't replace students... but trained them?"
-> Turn the "AI tool user" into an "AI agent manager"
-> This starts with *one agent*, VITA.
+
+> Our Perspective: Turn the "AI tool user" into a "AI agent manager"
 
 ---
 ```text
@@ -250,43 +239,20 @@ This is why we are building VITA.
 - Growth mindset installed naturally ("what else does the agent need from me?")
 
 > The journey begins with VITA, your "growth mindset" TA.
-> It continues through their *AI-required* capstone software project.
 
 ---
 
 ## Growth Mindset Case Studies in CS
-- (on request)
 
+### Already Showing Results:
+- **Miami Dade:** $82K → $100K graduate salaries
+- **Harvey Mudd:** 55% women in CS (sustained)
+- **UC Boulder:** 66% A-level mastery
 
 ### VITA's Approach is Aligned:
-
-**VITA as Your Cognitive Personal Trainer:**
-
-**Traditional TA:** *"Your null pointer is on line 47. Fix it."*  
-**VITA:** *"I see an error on line 47. What do you think might cause a 'null pointer exception'? Let's trace through this together."*
-
+- Cognitive "personal trainer" for debugging
 - Productive, iterative struggle with support
 - Complete data sovereignty (on-premise)
-- **Result:** Students learn to debug methodically, not just fix one error
-
----
-
-## The Student Journey: Without vs With VITA
-
-```text
-         WITHOUT VITA                    WITH VITA
-        "The Struggle Maze"           "The Guided Path"
-        
-    ERROR → GOOGLE → CONFUSION      ERROR → VITA → CONTEXT
-      ↓        ↓         ↓             ↓       ↓        ↓
-    FORUMS  OVERFLOW  CHATGPT      ANALYSIS SOLUTION LEARNING
-      ↓        ↓         ↓             ↓       ↓        ↓  
-    COPY → PASTE → FAIL → REPEAT    UNDERSTAND → FIX → GROW
-    
-    Time: 3+ HOURS                  Time: 15 MINUTES
-    Result: Frustrated               Result: Empowered
-    Skill: Copy/Paste               Skill: Debug Mastery
-```
 
 ---
 ```text
@@ -313,29 +279,16 @@ This is why we are building VITA.
 
 ---
 
-### Data Sovereignty Comparison
-
-**❌ CURRENT RISK**
-Student Data → THE MONOLITH (External Cloud) → Unknown Storage
-"We don't know where it goes"
-
-**✅ VITA SOLUTION**
-Student Data → LOCAL VITA SERVER → 100% On-Campus
-FERPA Compliant • IT Controlled
-
----
-
 <!-- _class: lead -->
 
 ## Our Journey
-**From Educators to Developers**
+## From Educators to Developers
 
 **November 2023 - Present**
 - **David Teter**: Tools Group Manager
 - **Mallory Milstead**: Lead VITA Developer
-- **Brittany Smith**: Developer
 - **Hana Seidi**: Product Owner / Pedagogy Lead
-- **Anthony Cameron**: AI Policy Alignment
+- **Brittany Smith**: Developer
 - **Drew Norris**: Project Manager / Scrum Master
 
 ---
@@ -375,7 +328,7 @@ FERPA Compliant • IT Controlled
 
 ### Key Pivot (June 2025):
 - Removed Autogen framework
-- Moved to Ollama *single-agent* MVP
+- Moved to Ollama
 - This wasn't failure - it was learning
 
 ---
@@ -392,25 +345,8 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 - ✅ Local Ollama deployment
 - ✅ Panel UI functioning
 - ✅ OAuth authentication
-- ✅ Instructor materials 
+- ✅ Instructor corpus integration in progress
 
----
-
-## Future Architecture (Proposed for 2026 SU Dev Sprint)
-
-```text
-Student → VITA Orchestrator → [Debugging Agent]
-                            → [Code Analysis Agent]  
-                            → [Pattern Recognition]
-                            → [GitHub Verification*]
-                           
-*GitHub integration planned for Fall 2026
-```
-
-### Note on GitHub:
-- Concept proven in testing
-- Integration planned post-pilot
-- Will provide portfolio verification
 ---
 
 ### Technical Proof:
@@ -420,7 +356,7 @@ Student → VITA Orchestrator → [Debugging Agent]
 
 ### Educational Proof:
 - Iterative development works
-- Scrum methodology maps directly to workforce needs
+- Scrum methodology transfers to EdTech
 - "Break Up The Monolith" concept viable
 
 ### Ready to Deploy:
@@ -434,10 +370,21 @@ Student → VITA Orchestrator → [Debugging Agent]
 ## Next Steps
 
 ### Is VITA Ready for Action?
+### (Live Demo)
 
-**(Live Demo)**
+---
 
-> M. Milstead, VITA Lead Dev
+## Spring 2026 Pilot (Proposal)
+
+### Scope:
+- **2-3** CTI110 programming sections
+- **48-73** students total
+- **One** specialized agent (debugging)
+
+### Support Provided:
+- Faculty training (2 hours)
+- Weekly check-ins
+- Full documentation
 
 ---
 ### Student Outcome Metrics:
@@ -457,7 +404,7 @@ Student → VITA Orchestrator → [Debugging Agent]
 
 ---
 
-## The Ask We Already Got:
+## The Ask
 
 ### Infrastructure:
 - *magnamater* inference server (NOW LIVE)
@@ -466,34 +413,36 @@ Student → VITA Orchestrator → [Debugging Agent]
 ### People:
 - 2-3 faculty champions (CTI 110 stakeholders are IN)
 - IT liaison (already on task)
-- Admin sponsor (Thanks for coming today!)
+- Admin sponsor
+
 
 
 ---
-## The *Real* Ask:
+### Your Concerns Addressed:
 
-### *Understanding* The Tools Team as:
-- Platform Team (see *Team Topologies*)
-- A stream-aligned continuous-delivery team
-- For sponsors and shareholders to work within our process
+**"What if it fails?"**
+- Pilot is addition, not replacement
+- Quick rollback possible
 
-### *Discussion* of How to Integrate the Tools Team
+**"What about cheating?"**
+- VITA teaches process, not answers
+- Full audit trail
 
-### *Funding* for VITA development sprints, Summer 2026
-- Existing outlay: 50% hardware (minimal salary costs)
-- Full-time instructors are already fully loaded for 25FA/26SP
+**"Can we handle this?"**
+- Proven on community college infrastructure
+- Institutional support is key
+
 ---
 
-## Three Opportunities
+## Three Decisions Needed
 
-### 1. Join the Pioneer Cohort
-"Can we fund VITA development for (May/June/July) 2026?"
+### 1. Pilot Participation
+"Can we pilot VITA in Spring 2026?"
 
-### 2. Champion Innovation
-"Who are your champions of the **Tools Team Platform**?"
+### 2. Team Formation
+"Who are your champions?"
 
-### 3. Define Success Together
-"Does *continuous value delivery* matter to you?"
+### 3. Success Definition
 "What metrics matter most to you?"
 
 
@@ -502,19 +451,31 @@ Student → VITA Orchestrator → [Debugging Agent]
 ## Your Next Actions
 
 ### Before You Leave:
-☐ Establish consensus on Agile stream-aligned platform team existence
-☐ Confirm 26SU interest for VITA (yes/no)
+☐ Identify faculty champion  
+☐ Confirm pilot interest (yes/no)
 
 
 ### Contact:
-**David:** teterd@faytechcc.edu     - Tools Team Manager
+**David Teter:** teterd@faytechcc.edu - Tools Team Manager
 **Drew:** norrisa@faytechcc.edu     - Platform  & Architecture  
+**Mallory:** milsteam@faytechcc.edu - Technical & Training
 
-
-
+### Further Demos on Request!
 
 ---
-## Industry Validation for Our Approach
+
+### Data Sovereignty Comparison
+
+**❌ CURRENT RISK**
+Student Data → THE MONOLITH (External Cloud) → Unknown Storage
+"We don't know where it goes"
+
+**✅ VITA SOLUTION**
+Student Data → LOCAL VITA SERVER → 100% On-Campus
+FERPA Compliant • IT Controlled
+
+---
+## Industry Validation
 
 **IBM:** Agentic AI certificates
 
@@ -536,9 +497,9 @@ Semester 4 → "Just ask ChatGPT"
 
 ### VITA + Scrum Capstone Approach:
 **Semester 1:** Learn Debugging with VITA
-**Semester 2:** Add GitHub Codespaces, multi-agent coordination (VITA/GH Copilot)
+**Semester 2:** Add Multi-Agent Coordination (for research/ideation)
 **Semester 3:** Master Industry Patterns (Scrum/GitHub process)
-**Semester 4:** GH Porfolio + "1 year, Agent Manager" → **clear potential**
+**Semester 4:** Porfolio + "1 year, Agent Manager" → **clear placement potential**
 
 ---
 
@@ -547,7 +508,6 @@ Semester 4 → "Just ask ChatGPT"
 ### Industry Reality:
 - **51%** already using multi-agent systems
 - **170 million** new AI jobs coming
-- **Stream-aligned Teams** providing CI/CD are becoming more prevalent
 
 ### VITA Readiness:
 - **1** prototype developed using industry best practices
@@ -555,27 +515,4 @@ Semester 4 → "Just ask ChatGPT"
 - **100%** local data sovereignty
 
 > Questions? Comments?
-
----
-
-## The Vision
-
-**Imagine Spring 2027:**
-
-Your students aren't asking *"How do I fix this?"*  
-They're asking *"Which agent should I deploy for this?"*
-
-They're not copying from Stack Overflow.  
-They're orchestrating AI teams like conductors.
-
-They're not graduating with fear of replacement.  
-They're graduating as **the managers of tomorrow's AI workforce.**
-
-**We're not just debugging code.**  
-**We're debugging the future of CS education.**
-
-*One student. One agent. One transformation at a time.*
-
-> **The question isn't if this future will happen.**
-> **It's whether your students will lead it.**
 > 

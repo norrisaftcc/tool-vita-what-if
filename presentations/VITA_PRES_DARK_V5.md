@@ -122,11 +122,9 @@ style: |
 
 <!-- _class: lead -->
 
-## Tools Team -> Creating a Virtual TA
+## Creating a Virtual TA
 
-### and chipping a piece off of [The Monolith]
-
-#### (by learning to build our own AI agent)
+### (by learning to build our own AI agent)
 
 
 
@@ -138,22 +136,16 @@ style: |
 
 <!-- _class: lead -->
 
-![height:600px](image1.png)
+## The Reason We're All Here
 
+**The CP&D Tools Team:**
+- David Teter: Tools Team Manager, CP&D Chair
+- Mallory Milstead: Lead Developer, VITA
+- Brittany Smith: Developer (multiple tools)
+- Hana Seidi: Product Owner (pedagogical methods)
+- Anthony Cameron: Product Owner (institutional AI policy alignment)
 
----
-
-
-![width:900px](image2.png)
-
----
-## Life with [The Monolith]
-
-> *"I spent 3 hours debugging a hierarchical menu. ChatGPT gave me 6 'fixes' - none worked. I don't even know what questions to ask anymore."*
-
-**— Sarah, CTI 110 Student, 2:47 AM (AI Generated)**
-
-This is why we are building VITA.
+>Our aim: To be, rather than to seem.
 
 ---
 ## We Need to Talk about [The Monolith]
@@ -162,12 +154,6 @@ This is why we are building VITA.
 - **51%** of companies use multiple AI agents in production
 - **$140K+** salaries for multi-agent specialists  
 - **78%** of employers need orchestration skills NOW
-
-### That $15,000 Gap Means:
-- **$315/month** — A reliable car vs. the bus
-- **$1,250/month** — Your own place vs. roommates forever  
-- **3 years faster** — Student loans paid off
-- The difference between surviving and **thriving**
 
 ### Education Is Still Dealing with [The Monolith]:
 - Teaching single-tool usage, or worse
@@ -210,8 +196,7 @@ This is why we are building VITA.
 
 
 
-> "What if AI didn't replace students... but trained them?"
-> Turn the "AI tool user" into an "AI agent manager"
+> Our Perspective: Turn the "AI tool user" into a "AI agent manager"
 > This starts with *one agent*, VITA.
 
 ---
@@ -259,34 +244,9 @@ This is why we are building VITA.
 
 
 ### VITA's Approach is Aligned:
-
-**VITA as Your Cognitive Personal Trainer:**
-
-**Traditional TA:** *"Your null pointer is on line 47. Fix it."*  
-**VITA:** *"I see an error on line 47. What do you think might cause a 'null pointer exception'? Let's trace through this together."*
-
+- Cognitive "personal trainer" for debugging
 - Productive, iterative struggle with support
 - Complete data sovereignty (on-premise)
-- **Result:** Students learn to debug methodically, not just fix one error
-
----
-
-## The Student Journey: Without vs With VITA
-
-```text
-         WITHOUT VITA                    WITH VITA
-        "The Struggle Maze"           "The Guided Path"
-        
-    ERROR → GOOGLE → CONFUSION      ERROR → VITA → CONTEXT
-      ↓        ↓         ↓             ↓       ↓        ↓
-    FORUMS  OVERFLOW  CHATGPT      ANALYSIS SOLUTION LEARNING
-      ↓        ↓         ↓             ↓       ↓        ↓  
-    COPY → PASTE → FAIL → REPEAT    UNDERSTAND → FIX → GROW
-    
-    Time: 3+ HOURS                  Time: 15 MINUTES
-    Result: Frustrated               Result: Empowered
-    Skill: Copy/Paste               Skill: Debug Mastery
-```
 
 ---
 ```text
@@ -392,7 +352,7 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 - ✅ Local Ollama deployment
 - ✅ Panel UI functioning
 - ✅ OAuth authentication
-- ✅ Instructor materials 
+- ✅ Instructor corpus integration in progress
 
 ---
 
@@ -470,7 +430,7 @@ Student → VITA Orchestrator → [Debugging Agent]
 
 
 ---
-## The *Real* Ask:
+## The Ask:
 
 ### *Understanding* The Tools Team as:
 - Platform Team (see *Team Topologies*)
@@ -484,15 +444,15 @@ Student → VITA Orchestrator → [Debugging Agent]
 - Full-time instructors are already fully loaded for 25FA/26SP
 ---
 
-## Three Opportunities
+## Three Decisions Needed
 
-### 1. Join the Pioneer Cohort
-"Can we fund VITA development for (May/June/July) 2026?"
+### 1. Continued Development
+"Can we fund VITA development for 2025SU?"
 
-### 2. Champion Innovation
+### 2. Team Formation
 "Who are your champions of the **Tools Team Platform**?"
 
-### 3. Define Success Together
+### 3. Success Definition
 "Does *continuous value delivery* matter to you?"
 "What metrics matter most to you?"
 
@@ -555,27 +515,4 @@ Semester 4 → "Just ask ChatGPT"
 - **100%** local data sovereignty
 
 > Questions? Comments?
-
----
-
-## The Vision
-
-**Imagine Spring 2027:**
-
-Your students aren't asking *"How do I fix this?"*  
-They're asking *"Which agent should I deploy for this?"*
-
-They're not copying from Stack Overflow.  
-They're orchestrating AI teams like conductors.
-
-They're not graduating with fear of replacement.  
-They're graduating as **the managers of tomorrow's AI workforce.**
-
-**We're not just debugging code.**  
-**We're debugging the future of CS education.**
-
-*One student. One agent. One transformation at a time.*
-
-> **The question isn't if this future will happen.**
-> **It's whether your students will lead it.**
 > 
