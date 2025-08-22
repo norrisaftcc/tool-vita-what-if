@@ -136,20 +136,13 @@ style: |
 
 <!-- _class: lead -->
 
-## The Reason We're All Here
-
-**Traditional Grads:**
-👤 "I can use [The Monolith] to help me code."
+## The Question
 
 
-**VITA + Capstone Grads:**
-👤 "I orchestrate specialized AI agents for 
-- debugging 
-- research
-- implementation
-based on task requirements"
 
->Which student is *aligned* with workforce realities?
+### How to teach the job skills of tomorrow
+
+### To our students, today?
 
 ---
 ## The Reality Check
@@ -159,9 +152,9 @@ based on task requirements"
 - **$140K+** salaries for multi-agent specialists  
 - **78%** of employers need orchestration skills NOW
 
-### Education Is Still Catching Up:
-- Teaching single-tool usage, or worse
-- "Just use [The Monolith]" (or "Don't use [it]")
+### Education Is Still Here:
+- Teaching single-tool usage, or *single-tool avoidance*
+- "Just use ChatGPT for everything" or "Don't use it"
 - No evaluation or selection skills by model or platform
 
 ---
@@ -192,7 +185,7 @@ based on task requirements"
 
 ## Universal Fears
 
-**Students:** *"Will AI replace me?"* 
+**Students:** *"Will AI replace me?"*
 
 **Faculty:** *"Are they learning or copying?"*
 
@@ -230,6 +223,8 @@ based on task requirements"
 
 ---
 
+## The Transformation
+
 ### FROM: One tool for everything
 ### TO: Right tool for each task
 ### Student Becomes: 
@@ -237,8 +232,6 @@ based on task requirements"
 - Training in working through iterative workflow (Scrum/Agile)
 - Learning through "progressive overload" (mental workout)
 - Growth mindset installed naturally ("what else does the agent need from me?")
-
-> The journey begins with VITA, your "growth mindset" TA.
 
 ---
 
@@ -276,6 +269,18 @@ based on task requirements"
 - Single debugging agent (VITA)
 - Prove the concept
 - Break a little piece off of [The Monolith]
+
+---
+## Industry Validation
+
+**IBM:** Agentic AI certificates
+
+**CrewAI:** 100,000+ certified
+
+**Microsoft:** 890,000+ AutoGen downloads
+
+> Multi-agent AI orchestration isn't the future anymore. It's today.
+> VITA starts us down the path to tomorrow.
 
 ---
 
@@ -475,18 +480,6 @@ Student Data → LOCAL VITA SERVER → 100% On-Campus
 FERPA Compliant • IT Controlled
 
 ---
-## Industry Validation
-
-**IBM:** Agentic AI certificates
-
-**CrewAI:** 100,000+ certified
-
-**Microsoft:** 890,000+ AutoGen downloads
-
-> Multi-agent AI orchestration isn't the future anymore. It's today.
-> VITA starts us down the path to tomorrow.
-
----
 
 ## Skill Development Progression
 
@@ -503,10 +496,27 @@ Semester 4 → "Just ask ChatGPT"
 
 ---
 
+**Traditional Grads:**
+👤 "I can use ChatGPT"
+- Single tool dependency
+- No specialization understanding
+- Can't debug without AI
+**Starting Salary: ✅✅**
+
+**VITA + Capstone Grads:**
+👤 "I orchestrate specialized AI agents for different tasks"
+- Tool discrimination skills  
+- Debugging expertise with AI partnership
+- Ready for Agile/Scrum workflows (97% of companies)
+**Starting Salary: ✅✅✅+**
+
+---
+
 ## The Bottom Line
 
 ### Industry Reality:
 - **51%** already using multi-agent systems
+- **$15,000** salary premium for orchestration skills
 - **170 million** new AI jobs coming
 
 ### VITA Readiness:
@@ -515,4 +525,3 @@ Semester 4 → "Just ask ChatGPT"
 - **100%** local data sovereignty
 
 > Questions? Comments?
-> 

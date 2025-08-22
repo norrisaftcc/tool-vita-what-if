@@ -122,7 +122,7 @@ style: |
 
 <!-- _class: lead -->
 
-## Creating a Virtual TA
+## Breaking Up The "AI Monolith"
 
 ### (by learning to build our own AI agent)
 
@@ -136,20 +136,13 @@ style: |
 
 <!-- _class: lead -->
 
-## The Reason We're All Here
-
-**Traditional Grads:**
-👤 "I can use [The Monolith] to help me code."
+## The Elephant in the Room
 
 
-**VITA + Capstone Grads:**
-👤 "I orchestrate specialized AI agents for 
-- debugging 
-- research
-- implementation
-based on task requirements"
 
->Which student is *aligned* with workforce realities?
+### How to teach the job skills of tomorrow
+
+### To our students, today?
 
 ---
 ## The Reality Check
@@ -159,9 +152,9 @@ based on task requirements"
 - **$140K+** salaries for multi-agent specialists  
 - **78%** of employers need orchestration skills NOW
 
-### Education Is Still Catching Up:
-- Teaching single-tool usage, or worse
-- "Just use [The Monolith]" (or "Don't use [it]")
+### Education Is Still Here:
+- Teaching single-tool usage, or *single-tool avoidance*
+- "Just use ChatGPT for everything" or "Don't use it"
 - No evaluation or selection skills by model or platform
 
 ---
@@ -192,7 +185,7 @@ based on task requirements"
 
 ## Universal Fears
 
-**Students:** *"Will AI replace me?"* 
+**Students:** *"Will AI replace me?"*
 
 **Faculty:** *"Are they learning or copying?"*
 
@@ -230,6 +223,8 @@ based on task requirements"
 
 ---
 
+## The Transformation
+
 ### FROM: One tool for everything
 ### TO: Right tool for each task
 ### Student Becomes: 
@@ -237,8 +232,6 @@ based on task requirements"
 - Training in working through iterative workflow (Scrum/Agile)
 - Learning through "progressive overload" (mental workout)
 - Growth mindset installed naturally ("what else does the agent need from me?")
-
-> The journey begins with VITA, your "growth mindset" TA.
 
 ---
 
@@ -275,7 +268,35 @@ based on task requirements"
 ### Phase 1 (Proposed):
 - Single debugging agent (VITA)
 - Prove the concept
-- Break a little piece off of [The Monolith]
+- Build faculty confidence
+
+---
+
+<!-- _class: lead -->
+
+## The Interview Question...
+
+### "What's the skill you're most proud of?"
+
+**Traditional Graduate:**
+"I can use ChatGPT" → **"..."**
+
+
+**VITA-Trained Graduate:**
+"I managed task-specific AI agents in Scrum" → **"what's your GitHub?"**
+
+---
+
+## Industry Validation
+
+**IBM:** Agentic AI certificates
+
+**CrewAI:** 100,000+ certified
+
+**Microsoft:** 890,000+ AutoGen downloads
+
+> Multi-agent AI orchestration isn't the future anymore. It's Friday.
+> VITA helps your students show up ready for Monday.
 
 ---
 
@@ -285,11 +306,6 @@ based on task requirements"
 ## From Educators to Developers
 
 **November 2023 - Present**
-- **David Teter**: Tools Group Manager
-- **Mallory Milstead**: Lead VITA Developer
-- **Hana Seidi**: Product Owner / Pedagogy Lead
-- **Brittany Smith**: Developer
-- **Drew Norris**: Project Manager / Scrum Master
 
 ---
 
@@ -349,8 +365,28 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 
 ---
 
+## Future Architecture (Planned)
+
+```text
+Student → VITA Orchestrator → [Debugging Agent]
+                           → [Code Analysis Agent]  
+                           → [Pattern Recognition]
+                           → [GitHub Verification*]
+                           
+*GitHub integration planned for Fall 2025
+```
+
+### Note on GitHub:
+- Concept proven in testing
+- Integration planned post-pilot
+- Will provide portfolio verification
+
+---
+
+## What We've Proven
+
 ### Technical Proof:
-- Local models can provide quality help as of 2025
+- Local models can provide quality help
 - Complete data sovereignty achievable
 - Educators can build production software
 
@@ -361,23 +397,22 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 
 ### Ready to Deploy:
 - Working single-agent prototype
-- Ollama server: ready for further testing
+- Demonstrates core concept
+- Pilot-ready for Spring 2026
 
 ---
 
 <!-- _class: lead -->
 
 ## Next Steps
-
-### Is VITA Ready for Action?
-### (Live Demo)
+## Small Scale, Big Impact
 
 ---
 
 ## Spring 2026 Pilot (Proposal)
 
 ### Scope:
-- **2-3** CTI110 programming sections
+- **2-3** intro programming sections
 - **48-73** students total
 - **One** specialized agent (debugging)
 
@@ -387,17 +422,17 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 - Full documentation
 
 ---
-### Student Outcome Metrics:
+### Student Outcomes:
 - Reflection survey
 - In-tool feedback (helpful yes/no)
 - Assignment completion / Retention
 
-### Faculty Benefit Metrics:
+### Faculty Benefits:
 - Reduced "syntax error" office hours
 - More conceptual teaching time
 - Student question quality improved
 
-### Technical Performance Metrics:
+### Technical Performance:
 - System reliability
 - Response time
 - Resource usage
@@ -405,19 +440,25 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 ---
 
 ## The Ask
+### **50% Already Given -- Thank you!**
 
 ### Infrastructure:
 - *magnamater* inference server (NOW LIVE)
 - IT support (Thanks Mike!)
 
 ### People:
-- 2-3 faculty champions (CTI 110 stakeholders are IN)
-- IT liaison (already on task)
+- 2-3 faculty champions (CTI 110 interest confirmed)
+- IT liaison (already helping)
 - Admin sponsor
 
-
+### Time:
+- 2 hours training
+- 30 min/week feedback during pilot
 
 ---
+
+## Risk Mitigation
+
 ### Your Concerns Addressed:
 
 **"What if it fails?"**
@@ -430,21 +471,25 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 
 **"Can we handle this?"**
 - Proven on community college infrastructure
-- Institutional support is key
+- Complete support provided
 
 ---
 
 ## Three Decisions Needed
 
-### 1. Pilot Participation
-"Can we pilot VITA in Spring 2026?"
+## 1. Pilot Participation
+"Can we pilot VITA in Spring 2025?"
 
-### 2. Team Formation
+## 2. Team Formation
 "Who are your champions?"
+- Faculty lead:  _______
+- IT contact:    _______
+- Admin sponsor: _______
 
-### 3. Success Definition
+## 3. Success Definition
 "What metrics matter most to you?"
 
+**Decision needed by: December 1, 2025**
 
 ---
 
@@ -452,17 +497,40 @@ Student Input → VITA Client → Ollama (Local) → Debugging Support
 
 ### Before You Leave:
 ☐ Identify faculty champion  
+☐ Check IT calendar for tech review  
 ☐ Confirm pilot interest (yes/no)
 
+### We Deliver by December 30:
+☐ Technical requirements  
+☐ Training materials  
+☐ Success framework
 
 ### Contact:
 **David Teter:** teterd@faytechcc.edu - Tools Team Manager
 **Drew:** norrisa@faytechcc.edu     - Platform  & Architecture  
 **Mallory:** milsteam@faytechcc.edu - Technical & Training
 
-### Further Demos on Request!
+### Demo Available:
+November 10-20, 2025
 
 ---
+
+<!-- _class: lead -->
+
+## The Choice
+
+## The Industry Has Moved
+## The Question Is Whether Education Leads or Lags
+
+> "Every semester we wait is another cohort unprepared for multi-agent reality"
+
+### Will We Be Ahead of the Pack?
+
+**Questions?**
+
+---
+
+## Additional Resources
 
 ### Data Sovereignty Comparison
 
@@ -475,18 +543,6 @@ Student Data → LOCAL VITA SERVER → 100% On-Campus
 FERPA Compliant • IT Controlled
 
 ---
-## Industry Validation
-
-**IBM:** Agentic AI certificates
-
-**CrewAI:** 100,000+ certified
-
-**Microsoft:** 890,000+ AutoGen downloads
-
-> Multi-agent AI orchestration isn't the future anymore. It's today.
-> VITA starts us down the path to tomorrow.
-
----
 
 ## Skill Development Progression
 
@@ -495,11 +551,32 @@ Semester 1 → "Just Google it"
 Semester 4 → "Just ask ChatGPT"
 **Result: No skill progression**
 
-### VITA + Scrum Capstone Approach:
+### VITA Approach:
 **Semester 1:** Learn Debugging with VITA
-**Semester 2:** Add Multi-Agent Coordination (for research/ideation)
-**Semester 3:** Master Industry Patterns (Scrum/GitHub process)
-**Semester 4:** Porfolio + "1 year, Agent Manager" → **clear placement potential**
+**Semester 2:** Add Multi-Agent Coordination
+**Semester 3:** Master Industry Patterns
+**Semester 4:** Graduate as Agent Manager → **clear placement potential**
+
+---
+
+## Industry Alignment
+
+### What Employers See:
+
+**Traditional Grads:**
+👤 "I can use ChatGPT"
+- Single tool dependency
+- No specialization understanding
+- Can't debug without AI
+**Starting Salary: ✅✅**
+
+**VITA Grads:**
+👤 "I orchestrate specialized AI agents for different tasks"
+- Multi-agent coordination
+- Tool discrimination skills  
+- Debugging expertise with AI partnership
+- Ready for Agile/Scrum workflows (97% of companies)
+**Starting Salary: ✅✅✅+**
 
 ---
 
@@ -507,12 +584,14 @@ Semester 4 → "Just ask ChatGPT"
 
 ### Industry Reality:
 - **51%** already using multi-agent systems
+- **$15,000** salary premium for orchestration skills
 - **170 million** new AI jobs coming
 
 ### VITA Readiness:
-- **1** prototype developed using industry best practices
+- **1** working prototype
+- **8** months of development
 - **3** successful pivots
 - **100%** local data sovereignty
 
-> Questions? Comments?
-> 
+> Multi-agent AI management is not the future - it's the present.
+> Proceeding with VITA helps your students join it.
