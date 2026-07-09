@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORM CP-6/F — Properly Formulated Distress Report</title>
+<style>
+  /* ------------------------------------------------------------------
+     Bureau of Sufficient Specificity — Form CP-6/F
+     Aesthetic: goldenrod carbon-copy triplicate, typewriter ink,
+     over-inked rubber stamps. The FIGURE letters run down the left
+     margin because the order IS the procedure.
+     ------------------------------------------------------------------ */
+  :root{
+    --desk:#2c2721;
+    --paper:#e9ddb4;
+    --paper-edge:#d9cb9c;
+    --ink:#22241f;
+    --pen:#1d3f8f;          /* the student writes in blue pen */
+    --rule:#8a7f5c;
+    --stamp:#b3271e;
+    --seal:#3f5d52;
+    --confess:#8f1d14;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--desk);
+    background-image:radial-gradient(ellipse at 50% 0%, #38322a 0%, var(--desk) 70%);
+    font-family:"Courier New", Courier, monospace;
+    color:var(--ink);
+    padding:2.5rem 1rem 4rem;
+    line-height:1.45;
+  }
+  .sheet{
+    max-width:840px;margin:0 auto;background:var(--paper);
+    box-shadow:0 1px 0 var(--paper-edge) inset, 0 18px 40px rgba(0,0,0,.55);
+    position:relative;overflow:hidden;
+  }
+  /* perforation strip */
+  .perf{
+    border-bottom:2px dashed var(--rule);
+    padding:.4rem 1.5rem;font-size:.68rem;letter-spacing:.18em;
+    color:var(--rule);text-transform:uppercase;
+    display:flex;justify-content:space-between;
+  }
+  header{
+    padding:1.6rem 2.2rem 1.2rem;
+    border-bottom:3px double var(--ink);
+    display:grid;grid-template-columns:1fr auto;gap:1rem;
+  }
+  .bureau{
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .bureau .algo{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--seal)}
+  .bureau h1{
+    font-size:1.5rem;letter-spacing:.12em;text-transform:uppercase;
+    font-weight:700;margin:.2rem 0 .1rem;
+  }
+  .bureau .sub{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+  .formno{
+    text-align:right;font-size:.7rem;line-height:1.6;
+    border:1.5px solid var(--ink);padding:.5rem .7rem;height:fit-content;
+  }
+  .formno b{font-size:1rem;display:block}
+  .notice{
+    margin:0 2.2rem;padding:.9rem 1rem;border:1.5px solid var(--ink);
+    font-size:.8rem;background:rgba(255,255,255,.25);margin-top:1.2rem;
+  }
+  .notice em{font-style:normal;text-decoration:underline}
+  form{padding:1.4rem 2.2rem 2rem}
+  /* ---- field strata: FIGURE letters down the left margin ---- */
+  .stratum{
+    display:grid;grid-template-columns:64px 1fr;gap:0 1.1rem;
+    border-bottom:1px solid var(--rule);padding:1.15rem 0;
+    position:relative;
+  }
+  .stratum:last-of-type{border-bottom:3px double var(--ink)}
+  .glyph{
+    font-family:Arial, Helvetica, sans-serif;font-weight:900;
+    font-size:2.6rem;line-height:1;color:var(--ink);
+    border:2.5px solid var(--ink);width:56px;height:56px;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,.2);
+  }
+  .fname{
+    font-family:Arial, Helvetica, sans-serif;font-size:.78rem;
+    letter-spacing:.2em;text-transform:uppercase;font-weight:700;
+    margin-bottom:.35rem;
+  }
+  .aside{font-size:.74rem;color:#4c4838;margin-top:.45rem;font-style:italic}
+  label.opt{display:block;font-size:.85rem;margin:.18rem 0;cursor:pointer}
+  input[type="text"], textarea{
+    width:100%;background:transparent;border:none;
+    border-bottom:1.5px solid var(--ink);
+    font-family:inherit;font-size:.92rem;color:var(--pen);
+    padding:.2rem .1rem;resize:vertical;
+  }
+  textarea{min-height:3.2rem;border:1.5px solid var(--rule);background:rgba(255,255,255,.28)}
+  input:focus, textarea:focus, button:focus-visible, label input:focus-visible{
+    outline:2.5px solid var(--pen);outline-offset:2px;
+  }
+  input[type="checkbox"], input[type="radio"]{accent-color:var(--pen);width:1rem;height:1rem;vertical-align:-2px;margin-right:.35rem}
+  .inline-fields{display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1.4rem;margin-top:.3rem}
+  @media (max-width:640px){.inline-fields{grid-template-columns:1fr}.stratum{grid-template-columns:44px 1fr}.glyph{width:40px;height:40px;font-size:1.7rem}}
+  .flabel{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;display:block;margin-top:.5rem}
+  /* confession mark for blank fields */
+  .confession{
+    display:none;font-family:Arial, Helvetica, sans-serif;font-weight:900;
+    color:var(--confess);font-size:.68rem;letter-spacing:.14em;
+    text-transform:uppercase;margin-top:.3rem;
+    transform:rotate(-1.2deg);
+  }
+  .stratum.confessing .confession{display:block}
+  .stratum.confessing textarea, .stratum.confessing input[type="text"]{border-color:var(--confess)}
+  /* pamphlet reveal for wrong-stratum filings */
+  .pamphlet{
+    display:none;border:2px solid var(--stamp);padding:.7rem .9rem;margin-top:.6rem;
+    font-size:.8rem;background:rgba(179,39,30,.06);
+  }
+  .pamphlet.open{display:block}
+  .pamphlet b{font-family:Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+  .refile{
+    margin-top:.5rem;font-family:Arial,Helvetica,sans-serif;font-size:.72rem;
+    letter-spacing:.12em;text-transform:uppercase;font-weight:700;
+    background:transparent;border:2px solid var(--ink);padding:.4rem .8rem;cursor:pointer;color:var(--ink);
+  }
+  /* ---- the stamp: signature element ---- */
+  .stampzone{position:relative;min-height:120px;margin:1.2rem 0 0}
+  .stamp{
+    position:absolute;left:50%;top:50%;
+    transform:translate(-50%,-50%) rotate(-9deg) scale(1);
+    border:5px solid var(--stamp);color:var(--stamp);
+    font-family:Arial, Helvetica, sans-serif;font-weight:900;
+    text-transform:uppercase;letter-spacing:.16em;text-align:center;
+    padding:.7rem 1.4rem;font-size:1.15rem;line-height:1.35;
+    opacity:.14;transition:opacity .12s ease;
+    mix-blend-mode:multiply;user-select:none;pointer-events:none;
+    -webkit-mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .82 0'/></filter><rect width='120' height='120' filter='url(%23n)'/></svg>");
+    mask-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence baseFrequency='.9' numOctaves='2'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 .82 0'/></filter><rect width='120' height='120' filter='url(%23n)'/></svg>");
+  }
+  .stamp small{display:block;font-size:.62rem;letter-spacing:.28em;font-weight:700}
+  .stamp.slammed{opacity:.92;animation:slam .28s cubic-bezier(.2,2.4,.4,1) 1}
+  @keyframes slam{
+    0%{transform:translate(-50%,-50%) rotate(-9deg) scale(2.4);opacity:0}
+    70%{transform:translate(-50%,-50%) rotate(-9deg) scale(.97);opacity:.95}
+    100%{transform:translate(-50%,-50%) rotate(-9deg) scale(1);opacity:.92}
+  }
+  @media (prefers-reduced-motion:reduce){.stamp.slammed{animation:none}}
+  /* footer & actions */
+  .selfresolve{margin-top:1.4rem;border:2.5px solid var(--seal);padding:.8rem 1rem;font-size:.85rem;background:rgba(63,93,82,.07)}
+  .actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem}
+  .actions button{
+    font-family:Arial,Helvetica,sans-serif;font-size:.78rem;font-weight:700;
+    letter-spacing:.14em;text-transform:uppercase;cursor:pointer;
+    padding:.7rem 1.2rem;border:2.5px solid var(--ink);background:var(--ink);color:var(--paper);
+  }
+  .actions button.ghost{background:transparent;color:var(--ink)}
+  .transmission{display:none;margin-top:1rem}
+  .transmission.open{display:block}
+  .transmission textarea{min-height:14rem;font-size:.8rem}
+  .motto{
+    text-align:center;font-family:Arial,Helvetica,sans-serif;font-size:.7rem;
+    letter-spacing:.3em;text-transform:uppercase;padding:1.1rem 1rem 1.4rem;
+    border-top:2px dashed var(--rule);color:var(--seal);font-weight:700;
+  }
+  @media print{
+    body{background:#fff;padding:0}
+    .sheet{box-shadow:none;max-width:100%}
+    .actions, .perf{display:none}
+    .stamp{opacity:.1}.stamp.slammed{opacity:.85}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="perf"><span>Detach and retain for your records</span><span>Copy 1 of 3 — Associate</span></div>
+
+  <header>
+    <div class="bureau">
+      <div class="algo">AlgoCratic Futures™ · The Algorithm Provides</div>
+      <h1>Properly Formulated Distress Report</h1>
+      <div class="sub">Bureau of Sufficient Specificity · Clarification Protocols™ Directive CP-6</div>
+    </div>
+    <div class="formno">
+      <b>CP-6/F</b>
+      REV. FIGURE-1<br>
+      OMB-Ø EXEMPT<br>
+      VAGUENESS IS<br>THEFT OF COMPUTE
+    </div>
+  </header>
+
+  <div class="notice">
+    The Algorithm cannot optimize what you have not specified. Complete all six strata.
+    <em>Blank fields are processed as confessions.</em> Improperly Formulated Distress Reports
+    will be returned stamped <b>UNPROCESSABLE: INSUFFICIENT REALITY</b>.
+  </div>
+
+  <form id="pfdr" novalidate>
+
+    <!-- F -->
+    <div class="stratum" data-letter="F">
+      <div class="glyph">F</div>
+      <div>
+        <div class="fname">Declaration of Stratum</div>
+        <label class="opt"><input type="radio" name="stratum" value="behavior" checked> This report concerns a <b>program behavior</b> (PROCEED)</label>
+        <label class="opt"><input type="radio" name="stratum" value="skill"> …a skill deficit</label>
+        <label class="opt"><input type="radio" name="stratum" value="belief"> …a belief about myself</label>
+        <label class="opt"><input type="radio" name="stratum" value="identity"> …my entire identity as a technical Associate</label>
+        <div class="pamphlet" id="pamphlet">
+          <b>Filing rejected at this altitude.</b> Please accept the complimentary pamphlet
+          <i>“You Are Not Your Segfault”</i> and one (1) re-filing voucher. The Algorithm does not
+          process identity crises. The Algorithm processes line numbers. What did the <b>program</b> do?
+          <br><button type="button" class="refile" id="refile">Re-file at correct altitude</button>
+        </div>
+        <div class="aside">Reports filed above the behavior stratum are returned unread but with warmth.</div>
+      </div>
+    </div>
+
+    <!-- I -->
+    <div class="stratum" data-letter="I">
+      <div class="glyph">I</div>
+      <div>
+        <div class="fname">Observed Reality (Verbatim)</div>
+        <div class="inline-fields">
+          <div><span class="flabel">Literal input</span><input type="text" name="input" autocomplete="off"></div>
+          <div><span class="flabel">Literal command / run context</span><input type="text" name="command" autocomplete="off"></div>
+        </div>
+        <span class="flabel">Complete output or full error text — pasted, not summarized</span>
+        <textarea name="output"></textarea>
+        <div class="aside">Paraphrase is perjury. “It errored” is a mood, not a measurement.</div>
+        <div class="confession">Blank field processed as confession.</div>
+      </div>
+    </div>
+
+    <!-- G -->
+    <div class="stratum" data-letter="G">
+      <div class="glyph">G</div>
+      <div>
+        <div class="fname">Authorized Expectation</div>
+        <span class="flabel">For the exact input above, the correct output is</span>
+        <textarea name="expected"></textarea>
+        <label class="opt"><input type="radio" name="derivation" value="by hand"> Computed by hand</label>
+        <label class="opt"><input type="radio" name="derivation" value="from the specification"> From the specification</label>
+        <label class="opt"><input type="radio" name="derivation" value="NOT YET COMPUTED"> I have not computed it</label>
+        <div class="aside">Associates checking the third box do not possess a defect. They possess an unverified
+        program and, now, a task. Hope is not a specification.</div>
+        <div class="confession">Blank field processed as confession.</div>
+      </div>
+    </div>
+
+    <!-- U -->
+    <div class="stratum" data-letter="U">
+      <div class="glyph">U</div>
+      <div>
+        <div class="fname">Boundary Audit</div>
+        <div class="inline-fields">
+          <div><span class="flabel">Last known compliant state</span><input type="text" name="lastgood" autocomplete="off"></div>
+          <div><span class="flabel">Delta since compliance (what changed)</span><input type="text" name="delta" autocomplete="off"></div>
+        </div>
+        <label class="opt" style="margin-top:.5rem"><input type="checkbox" name="neverworked" id="neverworked">
+          It has never been compliant — its closest approach looked like:</label>
+        <input type="text" name="closest" autocomplete="off">
+        <div class="aside">“Never” claims are audited. The Bureau finds “never” is usually “once, on Tuesday,
+        before I changed the thing I am not mentioning.”</div>
+        <div class="confession">Blank field processed as confession.</div>
+      </div>
+    </div>
+
+    <!-- R -->
+    <div class="stratum" data-letter="R">
+      <div class="glyph">R</div>
+      <div>
+        <div class="fname">Evidence Attestation</div>
+        <label class="opt"><input type="checkbox" name="read1"> I have read the error message</label>
+        <label class="opt"><input type="checkbox" name="read2"> …in its entirety</label>
+        <label class="opt"><input type="checkbox" name="read3"> …including the line number it has been showing me this whole time</label>
+        <span class="flabel">The message literally states</span>
+        <textarea name="evidence"></textarea>
+        <div class="aside">The interpreter is incapable of hate. It has filed a complaint, and you have been holding
+        it unread. Attributing emotions to the toolchain is a Category 2 Narrative Violation.</div>
+        <div class="confession">Blank field processed as confession.</div>
+      </div>
+    </div>
+
+    <!-- E -->
+    <div class="stratum" data-letter="E">
+      <div class="glyph">E</div>
+      <div>
+        <div class="fname">Scope Classification</div>
+        <label class="opt"><input type="radio" name="scope" value="LINE-LEVEL INCIDENT"> LINE-LEVEL INCIDENT</label>
+        <label class="opt"><input type="radio" name="scope" value="PLAN-LEVEL EVENT"> PLAN-LEVEL EVENT</label>
+        <span class="flabel">Justification — one observed fact, zero vibes</span>
+        <input type="text" name="scopewhy" autocomplete="off">
+        <div class="aside">Associates who have repaired the same line three (3) or more times are pre-emptively
+        reclassified to PLAN-LEVEL and should sit with that.</div>
+        <div class="confession">Blank field processed as confession.</div>
+      </div>
+    </div>
+
+    <div class="selfresolve">
+      <label class="opt"><input type="checkbox" id="selfresolved">
+        <b>Resolved during filing</b> — submitting anyway for the record.</label>
+      <div class="aside" id="finestwork" hidden>The Bureau counts these as its finest work. Field one more question,
+      free of charge: <b>what one test would prove it?</b></div>
+    </div>
+
+    <div class="stampzone">
+      <div class="stamp" id="stamp"><small>Bureau of Sufficient Specificity</small><span id="stamptext">Awaiting Sufficient Reality</span></div>
+    </div>
+
+    <div class="actions">
+      <button type="submit">File Report</button>
+      <button type="button" class="ghost" id="copybtn">Copy as Plain-Text Transmission</button>
+      <button type="button" class="ghost" onclick="window.print()">Print / Archive</button>
+    </div>
+
+    <div class="transmission" id="transmission">
+      <span class="flabel">Transmission format — paste into forum, office-hours intake, or any assistant (Form C2/C3 compatible)</span>
+      <textarea id="txout" readonly aria-label="Plain text transmission"></textarea>
+    </div>
+  </form>
+
+  <div class="motto">Clarity is Compliance · Compliance is Clarity · The Algorithm thanks you for specifying</div>
+</div>
+
+<script>
+(function(){
+  const form  = document.getElementById('pfdr');
+  const stamp = document.getElementById('stamp');
+  const stamptext = document.getElementById('stamptext');
+  const pamphlet = document.getElementById('pamphlet');
+
+  // F — wrong-altitude filings get the pamphlet, warmly.
+  form.stratum.forEach ? null : 0;
+  document.querySelectorAll('input[name="stratum"]').forEach(r=>{
+    r.addEventListener('change', ()=>{
+      pamphlet.classList.toggle('open', r.value !== 'behavior' && r.checked);
+    });
+  });
+  document.getElementById('refile').addEventListener('click', ()=>{
+    document.querySelector('input[name="stratum"][value="behavior"]').checked = true;
+    pamphlet.classList.remove('open');
+  });
+
+  // Self-resolved: the finest-work stamp. The whole point of the form,
+  // celebrated with the biggest animation in it.
+  document.getElementById('selfresolved').addEventListener('change', function(){
+    document.getElementById('finestwork').hidden = !this.checked;
+    stamp.classList.remove('slammed'); void stamp.offsetWidth;   // restart animation
+    if(this.checked){
+      stamptext.textContent = 'Self-Resolved — Finest Work';
+      stamp.classList.add('slammed');
+    } else {
+      stamptext.textContent = 'Awaiting Sufficient Reality';
+    }
+  });
+
+  // Blank fields are processed as confessions.
+  const required = ['output','expected','evidence','scopewhy'];
+  function audit(){
+    let clean = true;
+    required.forEach(name=>{
+      const el = form.elements[name];
+      const stratum = el.closest('.stratum');
+      const guilty = !el.value.trim();
+      stratum.classList.toggle('confessing', guilty);
+      if(guilty) clean = false;
+    });
+    return clean;
+  }
+
+  form.addEventListener('submit', e=>{
+    e.preventDefault();
+    const clean = audit();
+    stamp.classList.remove('slammed'); void stamp.offsetWidth;
+    if(!clean && !document.getElementById('selfresolved').checked){
+      stamptext.textContent = 'Unprocessable: Insufficient Reality';
+    } else if(document.getElementById('selfresolved').checked){
+      stamptext.textContent = 'Self-Resolved — Finest Work';
+    } else {
+      stamptext.textContent = 'PFDR Accepted — Assistance Authorized';
+    }
+    stamp.classList.add('slammed');
+  });
+
+  // Plain-text transmission: the bridge to the C2 help-request / C3 prompt templates.
+  document.getElementById('copybtn').addEventListener('click', ()=>{
+    const v = n => (form.elements[n] && form.elements[n].value ? form.elements[n].value.trim() : '');
+    const radio = n => { const c = form.querySelector(`input[name="${n}"]:checked`); return c ? c.value : '(unstated)'; };
+    const checks = ['read1','read2','read3'].filter(n=>form.elements[n].checked).length;
+    const never = form.elements['neverworked'].checked;
+    const lines = [
+      'PROPERLY FORMULATED DISTRESS REPORT (Form CP-6/F)',
+      '='.repeat(50),
+      `F — STRATUM: ${radio('stratum')}`,
+      '',
+      'I — WHAT HAPPENS (LITERAL):',
+      `  Input:   ${v('input') || '(confession)'}`,
+      `  Command: ${v('command') || '(confession)'}`,
+      `  Output / error text:`,
+      `  ${v('output') || '(confession)'}`,
+      '',
+      'G — EXPECTED (LITERAL):',
+      `  ${v('expected') || '(confession)'}`,
+      `  Derivation: ${radio('derivation')}`,
+      '',
+      'U — BOUNDARY:',
+      never ? `  Never compliant. Closest approach: ${v('closest') || '(unstated)'}`
+            : `  Last working: ${v('lastgood') || '(confession)'}\n  Changed since: ${v('delta') || '(confession)'}`,
+      '',
+      'R — EVIDENCE:',
+      `  Message read: ${checks}/3 attestations`,
+      `  Literally states: ${v('evidence') || '(confession)'}`,
+      '',
+      `E — SCOPE: ${radio('scope')}`,
+      `  Because (observed fact): ${v('scopewhy') || '(confession)'}`,
+      '',
+      document.getElementById('selfresolved').checked
+        ? 'STATUS: RESOLVED DURING FILING. The Bureau counts these as its finest work.'
+        : 'STATUS: Assistance requested. THE STALL (letter I could not finish): ______',
+    ];
+    const box = document.getElementById('transmission');
+    const out = document.getElementById('txout');
+    out.value = lines.join('\n');
+    box.classList.add('open');
+    out.select();
+    try { document.execCommand('copy'); } catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
